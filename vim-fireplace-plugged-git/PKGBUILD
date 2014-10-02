@@ -1,0 +1,37 @@
+# Maintainer: Andy Weidenbaum <archbaum@gmail.com>
+
+pkgname=vim-fireplace-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+_gitname=vim-fireplace
+pkgver=20140902
+pkgrel=1
+pkgdesc="Clojure REPL support, by tpope ($USER)"
+arch=('any')
+depends=('vim' 'vim-clojure-static-git')
+makedepends=('git')
+optdepends=('vim-classpath-git: run code when no REPL is available, useless and possibly slow if you only care about nREPL support'
+            'vim-leiningen-git: assorted static project support')
+groups=('vim-plugins')
+url="https://github.com/tpope/vim-fireplace"
+license=('custom:vim')
+source=(git+https://github.com/tpope/vim-fireplace)
+sha256sums=('SKIP')
+install=fireplace.install
+
+pkgver() {
+  cd $_gitname
+  git log -1 --format="%cd" --date=short | sed "s|-||g"
+}
+
+prepare() {
+  cd $_gitname
+  git config remote.origin.url https://git::@${source##git+https://}.git
+}
+
+package() {
+  cd $_gitname
+  install -dm 755 "$pkgdir/$HOME/.vim/plugged/$_gitname"
+  for _file in `ls -A`; do
+    cp -dpr --no-preserve=ownership $_file "$pkgdir/$HOME/.vim/plugged/$_gitname"
+  done
+  find "$pkgdir" -mindepth 1 -maxdepth 1 -exec chown -R $USER:users '{}' \;
+}

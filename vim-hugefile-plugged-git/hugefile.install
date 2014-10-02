@@ -1,0 +1,30 @@
+post_install() {
+  printf "$hugefile\n"
+}
+
+post_upgrade() {
+  post_install
+}
+
+read -d '' hugefile <<'EOF'
+# vim-hugefile-git
+
+Vim always loads entire files. Therefore loading huge files (logfiles?) is
+pretty slow. And having the usual options set makes loading even slower.
+
+This plugin reduces the impact of the latter heavily by disabling these
+options for all huge files:
+
+- FileType autocmds
+- syntax highlighting
+- folding
+- swapfile
+- MatchParen
+
+This happens automatically for all files that are bigger or equal to
+2 MiB. You can change this value by setting g:hugefile_trigger_size
+(in MiB) in your vimrc.
+
+Before the options for handling huge files are set, your old settings
+get saved. :HugefileToggle toggles the current state.
+EOF

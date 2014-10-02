@@ -1,0 +1,14 @@
+post_install() {
+  printf "$pacmanlog\n"
+}
+
+post_upgrade() {
+  post_install
+}
+
+read -d '' pacmanlog <<'EOF'
+# vim-pacmanlog-git
+
+Highlight the time, different actions, warnings and errors in Pacman
+log files.
+EOF

@@ -1,0 +1,15 @@
+- pyclewn
+- python2-pyclewn
+- vim-align
+- vim-cecutil
+- vim-fugitive
+- vim-guicolorscheme
+- vim-indent-object
+- vim-jad
+- vim-jedi
+- vim-jellybeans
+- vim-nerdtree
+- vim-surround
+- vim-systemd
+- vim-ultisnips
+- vim-youcompleteme

@@ -1,0 +1,19 @@
+post_install() {
+  printf "$dutyl\n"
+}
+
+post_remove() {
+  post_upgrade
+}
+
+read -d '' dutyl <<'EOF'
+Dutyl
+=====
+
+Use g:dutyl_stdImportPaths to specify the standard library import paths.
+
+let g:dutyl_stdImportPaths=['/usr/include/dlang/dmd']
+
+You must either set g:dutyl_stdImportPaths or configure these paths in DCD
+itself, or else DCD won't be able to recognize standard library symbols.
+EOF

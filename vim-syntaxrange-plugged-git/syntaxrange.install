@@ -1,0 +1,45 @@
+post_install() {
+  printf "$syntaxrange\n"
+}
+
+post_upgrade() {
+  post_install
+}
+
+read -d '' syntaxrange <<'EOF'
+# vim-syntaxrange-git
+
+USAGE
+For quick, ad-hoc manipulation of the syntax withing a range of lines, the
+following commands are provided:
+
+:[range]SyntaxIgnore    Ignore the buffer's filetype syntax for the current
+                        line / lines in [range]. (Top-level keywords will
+                        still be highlighted.)
+                        This can be a useful fix when some text fragments
+                        confuse the syntax highlighting. (For example, when
+                        buffer syntax set to an inlined here-document is
+                        negatively affected by the foreign code surrounding
+                        the here-document.)
+
+:[range]SyntaxInclude {filetype}
+                        Use the {filetype} syntax for the current line / lines
+                        in [range].
+
+                        Line numbers in [range] are fixed; i.e. they do not
+                        adapt to inserted / deleted lines. But when in a
+                        range, the last line ($) is interpreted as "end of
+                        file".
+
+
+For finer control and use in custom mappings or syntax tweaks, the following
+functions can be used. You'll find the details directly in the
+.vim/autoload/SyntaxRange.vim implementation file.
+
+SyntaxRange#Include( startPattern, endPattern, filetype, ... )
+                        Use the {filetype} syntax for the region defined by
+                        {startPattern} and {endPattern}.
+SyntaxRange#IncludeEx( regionDefinition, filetype )
+                        Use the {filetype} syntax for the region defined by
+                        {regionDefinition}.
+EOF
