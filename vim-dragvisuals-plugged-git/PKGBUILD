@@ -6,7 +6,8 @@ pkgver=20140320
 pkgrel=1
 pkgdesc="Vim global plugin for dragging virtual blocks, by Damien Conway ($USER)"
 arch=('any')
-depends=('vim' 'vim-vis-git')
+depends=('vim'
+         "vim-vis-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/atweiden/vim-dragvisuals"

@@ -6,10 +6,11 @@ pkgver=20140902
 pkgrel=1
 pkgdesc="Clojure REPL support, by tpope ($USER)"
 arch=('any')
-depends=('vim' 'vim-clojure-static-git')
+depends=('vim'
+         "vim-clojure-static-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
-optdepends=('vim-classpath-git: run code when no REPL is available, useless and possibly slow if you only care about nREPL support'
-            'vim-leiningen-git: assorted static project support')
+optdepends=("vim-classpath-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: run code when no REPL is available, useless and possibly slow if you only care about nREPL support"
+            "vim-leiningen-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: assorted static project support")
 groups=('vim-plugins')
 url="https://github.com/tpope/vim-fireplace"
 license=('custom:vim')

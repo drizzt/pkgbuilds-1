@@ -6,7 +6,8 @@ pkgver=20140903
 pkgrel=1
 pkgdesc="Fold markdown documents by section ($USER)"
 arch=('any')
-depends=('vim' 'vim-markdown-git')
+depends=('vim'
+         "vim-markdown-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/nelstrom/vim-markdown-folding"

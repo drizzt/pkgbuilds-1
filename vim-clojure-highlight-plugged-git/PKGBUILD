@@ -6,7 +6,9 @@ pkgver=20140404
 pkgrel=1
 pkgdesc="Extend builtin syntax highlighting to referred and aliased vars in Clojure buffers ($USER)"
 arch=('any')
-depends=('vim' 'vim-clojure-static-git' 'vim-fireplace-git')
+depends=('vim'
+         "vim-clojure-static-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git"
+         "vim-fireplace-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/guns/vim-clojure-highlight"

@@ -6,7 +6,8 @@ pkgver=20140829
 pkgrel=1
 pkgdesc="Use ‘curly’ quote characters in Vim ($USER)"
 arch=('any')
-depends=('vim' 'vim-textobj-user-git')
+depends=('vim'
+         "vim-textobj-user-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/reedes/vim-textobj-quote"

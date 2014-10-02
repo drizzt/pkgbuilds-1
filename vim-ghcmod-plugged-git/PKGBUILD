@@ -6,7 +6,9 @@ pkgver=20140716
 pkgrel=1
 pkgdesc="Happy Haskell programming on Vim, powered by ghc-mod ($USER)"
 arch=('any')
-depends=('haskell-ghc-mod' 'vim' 'vim-vimproc')
+depends=('haskell-ghc-mod'
+         'vim'
+         "vim-vimproc-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/eagletmt/ghcmod-vim"

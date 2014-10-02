@@ -6,7 +6,8 @@ pkgver=20140223
 pkgrel=1
 pkgdesc="Improving on Vim's native sentence text object and motion ($USER)"
 arch=('any')
-depends=('vim' 'vim-textobj-user-git')
+depends=('vim'
+         "vim-textobj-user-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/reedes/vim-textobj-sentence"

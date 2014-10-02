@@ -6,7 +6,9 @@ pkgver=20140727
 pkgrel=1
 pkgdesc="Fast, extensible, context aware autocomplete plugin for PHP composer projects ($USER)"
 arch=('any')
-depends=('vim' 'vim-unite-git' 'vim-vimproc' 'vim-vital-git')
+depends=('vim'
+         "vim-unite-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git"
+         "vim-vimproc-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/m2mdas/phpcomplete-extended"

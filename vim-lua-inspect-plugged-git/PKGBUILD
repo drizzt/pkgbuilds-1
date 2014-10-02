@@ -6,7 +6,9 @@ pkgver=20140617
 pkgrel=1
 pkgdesc="Semantic highlighting for Lua in Vim ($USER)"
 arch=('any')
-depends=('lua' 'vim' 'vim-misc-xolox')
+depends=('lua'
+         'vim'
+         "vim-misc-xolox-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/xolox/vim-lua-inspect"

@@ -6,9 +6,10 @@ pkgver=20121021
 pkgrel=1
 pkgdesc="Make SQL statements more readable ($USER)"
 arch=('any')
-depends=('vim' 'vim-align')
+depends=('vim'
+         "vim-align-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
-optdepends=('vim-dbext: Enable Vim to access several databases')
+optdepends=("vim-dbext-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: Enable Vim to access several databases")
 groups=('vim-plugins')
 url="https://github.com/vim-scripts/SQLUtilities"
 license=('GPL')

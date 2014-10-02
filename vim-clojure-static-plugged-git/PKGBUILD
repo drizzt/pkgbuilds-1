@@ -8,12 +8,12 @@ pkgdesc="Meikel Brandmeyer's excellent Clojure runtime files, extracted from the
 arch=('any')
 depends=('vim')
 makedepends=('git')
-optdepends=('vim-classpath: sets the path to match the class path of your current Clojure project'
-            'vim-clojure-highlight-git: extended syntax highlighting for referred and aliased vars in Clojure buffers'
-            'vim-clojure-sql: SQL syntax highlighting'
-            'vim-fireplace-git: nREPL client by Tim Pope'
-            'vim-leiningen-git: static support for Leiningen'
-            'vim-rainbow-parentheses-git: rainbow parentheses syntax highlighting')
+optdepends=("vim-classpath-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: sets the path to match the class path of your current Clojure project"
+            "vim-clojure-highlight-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: extended syntax highlighting for referred and aliased vars in Clojure buffers"
+            "vim-clojure-sql-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: SQL syntax highlighting"
+            "vim-fireplace-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: nREPL client by Tim Pope"
+            "vim-leiningen-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: static support for Leiningen"
+            "vim-rainbow-parentheses-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: rainbow parentheses syntax highlighting")
 groups=('vim-plugins')
 url="https://github.com/guns/vim-clojure-static"
 license=('custom:vim')

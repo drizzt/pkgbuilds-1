@@ -6,7 +6,9 @@ pkgver=20140530
 pkgrel=1
 pkgdesc="Static Vim support for Leiningen ($USER)"
 arch=('any')
-depends=('leiningen' 'vim' 'vim-fireplace-git')
+depends=('leiningen'
+         'vim'
+         "vim-fireplace-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/tpope/vim-leiningen"
