@@ -9,9 +9,11 @@
 - vim-jad
 - vim-jedi
 - vim-jellybeans
+- vim-ledger
 - vim-misc-xolox
 - vim-nerdtree
 - vim-repeat
+- vim-scriptease
 - vim-surround
 - vim-systemd
 - vim-ultisnips
