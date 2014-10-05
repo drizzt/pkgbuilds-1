@@ -2,7 +2,7 @@
 
 pkgname=vim-colors-bubblegum-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=bubblegum
-pkgver=20140916
+pkgver=20140926
 pkgrel=1
 pkgdesc="A vim color scheme based on xoria256 ($USER)"
 arch=('any')

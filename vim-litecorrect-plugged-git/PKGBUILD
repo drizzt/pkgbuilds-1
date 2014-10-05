@@ -2,7 +2,7 @@
 
 pkgname=vim-litecorrect-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-litecorrect
-pkgver=20140916
+pkgver=20140921
 pkgrel=1
 pkgdesc="Lightweight auto-correction for Vim ($USER)"
 arch=('any')

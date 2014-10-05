@@ -6,7 +6,8 @@ pkgver=20130607
 pkgrel=1
 pkgdesc="EGS template for Vim ($USER)"
 arch=('any')
-depends=('vim')
+depends=('vim'
+         "vim-gorillascript-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/unc0/vim-egs"

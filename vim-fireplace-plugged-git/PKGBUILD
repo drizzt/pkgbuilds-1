@@ -2,7 +2,7 @@
 
 pkgname=vim-fireplace-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-fireplace
-pkgver=20140902
+pkgver=20140905
 pkgrel=1
 pkgdesc="Clojure REPL support, by tpope ($USER)"
 arch=('any')

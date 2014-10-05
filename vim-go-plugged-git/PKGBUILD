@@ -2,7 +2,7 @@
 
 pkgname=vim-go-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-go
-pkgver=20140903
+pkgver=20140930
 pkgrel=1
 pkgdesc="Go development plugin for Vim ($USER)"
 arch=('any')
@@ -10,11 +10,11 @@ depends=('vim')
 makedepends=('git')
 optdepends=('git: install go binaries on startup. To disable this behaviour add let g:go_disable_autoinstall = 1'
             'mercurial: install go binaries on startup. To disable this behaviour add let g:go_disable_autoinstall = 1'
-            'vim-neocomplete-git: real-time code completion'
-            'vim-neosnippet: code snippets'
-            'vim-tagbar: display source code tag information in sidebar'
-            'vim-ultisnips: code snippets'
-            'vim-youcompleteme-git: real-time code completion')
+            "vim-neocomplete-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: real-time code completion"
+            "vim-neosnippet-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: code snippets"
+            "vim-tagbar-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: display source code tag information in sidebar"
+            "vim-ultisnips-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: code snippets"
+            "vim-youcompleteme-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: real-time code completion")
 groups=('vim-plugins')
 url="https://github.com/fatih/vim-go"
 license=('custom:vim')

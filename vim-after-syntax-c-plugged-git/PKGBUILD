@@ -1,6 +1,6 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
-pkgname=vim-aftersyntaxc-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+pkgname=vim-after-syntax-c-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=aftersyntaxc.vim
 pkgver=20101217
 pkgrel=1

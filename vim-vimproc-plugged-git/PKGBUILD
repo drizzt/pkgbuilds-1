@@ -1,19 +1,17 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
-pkgname=vim-ghcmod-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
-_gitname=ghcmod-vim
-pkgver=20140716
+pkgname=vim-vimproc-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+_gitname=vimproc.vim
+pkgver=20141003
 pkgrel=1
-pkgdesc="Happy Haskell programming on Vim, powered by ghc-mod ($USER)"
-arch=('any')
-depends=('haskell-ghc-mod'
-         'vim'
-         "vim-vimproc-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
-makedepends=('git')
+pkgdesc="Interactive command execution in Vim ($USER)"
+arch=('i686' 'x86_64')
+depends=('vim')
+makedepends=('git' 'make')
 groups=('vim-plugins')
-url="https://github.com/eagletmt/ghcmod-vim"
-license=('BSD3')
-source=(git+https://github.com/eagletmt/$_gitname)
+url="https://github.com/Shougo/vimproc.vim"
+license=('custom:vim')
+source=(git+https://github.com/Shougo/vimproc.vim)
 sha256sums=('SKIP')
 
 pkgver() {
@@ -24,6 +22,11 @@ pkgver() {
 prepare() {
   cd $_gitname
   git config remote.origin.url https://git::@${source##git+https://}.git
+}
+
+build() {
+  cd $_gitname
+  make -f make_unix.mak
 }
 
 package() {

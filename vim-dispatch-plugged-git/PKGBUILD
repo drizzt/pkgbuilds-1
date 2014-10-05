@@ -2,7 +2,7 @@
 
 pkgname=vim-dispatch-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-dispatch
-pkgver=20140813
+pkgver=20140904
 pkgrel=1
 pkgdesc="Asynchronous build and test dispatcher ($USER)"
 arch=('any')

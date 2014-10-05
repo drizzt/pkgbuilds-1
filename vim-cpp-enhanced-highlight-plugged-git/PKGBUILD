@@ -2,7 +2,7 @@
 
 pkgname=vim-cpp-enhanced-highlight-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-cpp-enhanced-highlight
-pkgver=20140906
+pkgver=20140922
 pkgrel=1
 pkgdesc="Additional Vim syntax highlighting for C/C++, including C++11/14 ($USER)"
 arch=('any')

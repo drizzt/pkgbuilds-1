@@ -2,7 +2,7 @@
 
 pkgname=vim-incsearch-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=incsearch.vim
-pkgver=20140928
+pkgver=20141001
 pkgrel=1
 pkgdesc="Incrementally highlights all pattern matches unlike default incsearch ($USER)"
 arch=('any')

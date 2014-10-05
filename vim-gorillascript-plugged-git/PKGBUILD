@@ -1,19 +1,17 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
-pkgname=vim-ghcmod-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
-_gitname=ghcmod-vim
-pkgver=20140716
+pkgname=vim-gorillascript-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+_gitname=vim-gorilla-script
+pkgver=20140630
 pkgrel=1
-pkgdesc="Happy Haskell programming on Vim, powered by ghc-mod ($USER)"
+pkgdesc="GorillaScript Vim plugin ($USER)"
 arch=('any')
-depends=('haskell-ghc-mod'
-         'vim'
-         "vim-vimproc-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
+depends=('vim')
 makedepends=('git')
 groups=('vim-plugins')
-url="https://github.com/eagletmt/ghcmod-vim"
-license=('BSD3')
-source=(git+https://github.com/eagletmt/$_gitname)
+url="https://github.com/unc0/vim-gorilla-script"
+license=('WTFPL')
+source=(git+https://github.com/unc0/vim-gorilla-script)
 sha256sums=('SKIP')
 
 pkgver() {

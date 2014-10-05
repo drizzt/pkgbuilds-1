@@ -2,7 +2,7 @@
 
 pkgname=vim-file-line-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=file-line
-pkgver=20140711
+pkgver=20141003
 pkgrel=1
 pkgdesc="Open a file in Vim on a given line ($USER)"
 arch=('any')

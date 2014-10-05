@@ -2,7 +2,7 @@
 
 pkgname=vim-hasksyn-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=hasksyn
-pkgver=20140723
+pkgver=20140903
 pkgrel=1
 pkgdesc="A vim mode for Haskell that provides more comprehensive syntax highlighting for normal Haskell code, along with fairly reasonable indentation, and improved highlighting for cabal files ($USER)"
 arch=('any')

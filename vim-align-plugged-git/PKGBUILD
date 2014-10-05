@@ -1,19 +1,17 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
-pkgname=vim-ghcmod-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
-_gitname=ghcmod-vim
-pkgver=20140716
+pkgname=vim-align-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+_gitname=Align
+pkgver=20130410
 pkgrel=1
-pkgdesc="Happy Haskell programming on Vim, powered by ghc-mod ($USER)"
+pkgdesc="Lets you align lines using regular expressions ($USER)"
 arch=('any')
-depends=('haskell-ghc-mod'
-         'vim'
-         "vim-vimproc-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
+depends=('vim')
 makedepends=('git')
 groups=('vim-plugins')
-url="https://github.com/eagletmt/ghcmod-vim"
-license=('BSD3')
-source=(git+https://github.com/eagletmt/$_gitname)
+url="https://github.com/JLimperg/Align"
+license=('custom:vim')
+source=(git+https://github.com/JLimperg/Align)
 sha256sums=('SKIP')
 
 pkgver() {

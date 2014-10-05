@@ -7,8 +7,7 @@ pkgrel=2
 pkgdesc="Extended Vim visual mode commands, substitutes, and searches ($USER)"
 arch=('any')
 depends=('vim'
-         "vim-align-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git"
-         "vim-cecutil-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
+         "vim-align-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/vim-scripts/vis"

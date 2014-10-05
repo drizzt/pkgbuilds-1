@@ -2,7 +2,7 @@
 
 pkgname=vim-lengthmatters-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-lengthmatters
-pkgver=20140921
+pkgver=20141002
 pkgrel=1
 pkgdesc="Highlight the flooding part of an overly long line ($USER)"
 arch=('any')

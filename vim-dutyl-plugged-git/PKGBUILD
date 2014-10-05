@@ -2,7 +2,7 @@
 
 pkgname=vim-dutyl-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-dutyl
-pkgver=20140917
+pkgver=20141004
 pkgrel=1
 pkgdesc="Coordinate D tools to work together for you ($USER)"
 arch=('any')
@@ -11,7 +11,7 @@ makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/idanarye/vim-dutyl"
 license=('MIT')
-source=(git+https://github.com/idanarye/vim-dutyl)
+source=(git+https://github.com/idanarye/vim-dutyl#branch=master)
 sha256sums=('SKIP')
 install=dutyl.install
 
@@ -22,7 +22,7 @@ pkgver() {
 
 prepare() {
   cd $_gitname
-  git config remote.origin.url https://git::@${source##git+https://}.git
+  git config remote.origin.url https://git::@github.com/idanarye/vim-dutyl.git
 }
 
 package() {
