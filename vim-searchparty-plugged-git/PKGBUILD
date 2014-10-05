@@ -2,7 +2,7 @@
 
 pkgname=vim-searchparty-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=SearchParty
-pkgver=20140502
+pkgver=20140930
 pkgrel=1
 pkgdesc="Extended search commands and maps for Vim ($USER)"
 arch=('any')

@@ -2,7 +2,7 @@
 
 pkgname=vim-thematic-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-thematic
-pkgver=20140916
+pkgver=20140922
 pkgrel=1
 pkgdesc="Conveniently manage Vim’s appearance to suit your task and environment ($USER)"
 arch=('any')

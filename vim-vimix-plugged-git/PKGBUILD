@@ -2,7 +2,7 @@
 
 pkgname=vim-vimix-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vimix
-pkgver=20140619
+pkgver=20140906
 pkgrel=1
 pkgdesc="Changes Vimux runner directory to Elixir project root and detects correct test file ($USER)"
 arch=('any')

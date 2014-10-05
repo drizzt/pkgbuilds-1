@@ -2,7 +2,7 @@
 
 pkgname=vimux-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vimux
-pkgver=20140714
+pkgver=20140921
 pkgrel=1
 pkgdesc="Easily interact with tmux from Vim ($USER)"
 arch=('any')

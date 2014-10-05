@@ -2,7 +2,7 @@
 
 pkgname=vim-moonscript-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=moonscript-vim
-pkgver=20140304
+pkgver=20140917
 pkgrel=1
 pkgdesc="MoonScript support for Vim ($USER)"
 arch=('any')

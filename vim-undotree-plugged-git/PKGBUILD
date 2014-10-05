@@ -2,7 +2,7 @@
 
 pkgname=vim-undotree-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=undotree
-pkgver=20140804
+pkgver=20140917
 pkgrel=1
 pkgdesc="Display your undo history in a graph ($USER)"
 arch=('any')

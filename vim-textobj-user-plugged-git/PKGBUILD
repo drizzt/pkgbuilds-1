@@ -2,7 +2,7 @@
 
 pkgname=vim-textobj-user-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-textobj-user
-pkgver=20140622
+pkgver=20140914
 pkgrel=1
 pkgdesc="Create your own text objects ($USER)"
 arch=('any')

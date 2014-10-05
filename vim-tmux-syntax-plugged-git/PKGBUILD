@@ -2,7 +2,7 @@
 
 pkgname=vim-tmux-syntax-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-tmux-syntax
-pkgver=20140909
+pkgver=20141001
 pkgrel=1
 pkgdesc="Vim syntax for tmux configuration files ($USER)"
 arch=('any')

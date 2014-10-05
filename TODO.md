@@ -1,13 +1,12 @@
 - pyclewn
 - python2-pyclewn
-- vim-align
-- vim-cecutil
+- vim-align [CHECK]
+- vim-cecutil [CHECK]
 - vim-dbext
 - vim-easytags
 - vim-fugitive
 - vim-gnupg
 - vim-guicolorscheme
-- vim-gundo
 - vim-hilinktrace-git
 - vim-indent-object
 - vim-iptables
@@ -18,16 +17,17 @@
 - vim-ledger
 - vim-lustyexplorer
 - vim-matchit
-- vim-misc-xolox
+- vim-misc-xolox [CHECK]
 - vim-nerdcommenter
 - vim-nerdtree
+- vim-nginx
 - vim-perl
 - vim-phperrormarker
-- vim-repeat
+- vim-repeat [CHECK]
 - vim-scriptease
 - vim-surround
 - vim-systemd
 - vim-tagbar
 - vim-ultisnips
-- vim-vimproc
+- vim-vimproc [CHECK]
 - vim-youcompleteme

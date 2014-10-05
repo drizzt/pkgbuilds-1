@@ -2,7 +2,7 @@
 
 pkgname=vim-tmux-navigator-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-tmux-navigator
-pkgver=20140722
+pkgver=20140909
 pkgrel=1
 pkgdesc="Seamless navigation between tmux panes and Vim splits ($USER)"
 arch=('any')

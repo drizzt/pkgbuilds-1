@@ -1,18 +1,17 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
-pkgname=vim-unite-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
-_gitname=unite.vim
-pkgver=20141001
+pkgname=vim-repeat-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+_gitname=vim-repeat
+pkgver=20131224
 pkgrel=1
-pkgdesc="Common extensible interface for searching and displaying lists of information from within Vim ($USER)"
+pkgdesc="Enable repeating supported plugin maps with '.' ($USER)"
 arch=('any')
 depends=('vim')
 makedepends=('git')
-optdepends=("vim-vimproc-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: for various unite sources")
 groups=('vim-plugins')
-url="https://github.com/Shougo/unite.vim"
-license=('MIT')
-source=(git+https://github.com/Shougo/unite.vim)
+url="https://github.com/tpope/vim-repeat"
+license=('custom:vim')
+source=(git+https://github.com/tpope/vim-repeat)
 sha256sums=('SKIP')
 
 pkgver() {

@@ -1,10 +1,10 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
-pkgname=vim-nimrod-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+pkgname=vim-nim-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=nimrod.vim
-pkgver=20140806
+pkgver=20140904
 pkgrel=1
-pkgdesc="Nimrod language support for Vim ($USER)"
+pkgdesc="Nim language support for Vim ($USER)"
 arch=('any')
 depends=('vim')
 makedepends=('git')
@@ -13,7 +13,7 @@ url="https://github.com/zah/nimrod.vim"
 license=('custom:vim')
 source=(git+https://github.com/zah/$_gitname)
 sha256sums=('SKIP')
-install=nimrod.install
+install=nim.install
 
 pkgver() {
   cd $_gitname
