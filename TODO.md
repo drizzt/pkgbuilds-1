@@ -8,7 +8,7 @@
 - vim-gnupg
 - vim-guicolorscheme
 - vim-hilinktrace-git
-- vim-indent-object
+- vim-indent-object [CHECK]
 - vim-iptables
 - vim-jad
 - vim-jedi
@@ -18,16 +18,16 @@
 - vim-lustyexplorer
 - vim-matchit
 - vim-misc-xolox [CHECK]
-- vim-nerdcommenter
-- vim-nerdtree
+- vim-nerdcommenter [vim-commentary]
+- vim-nerdtree [CHECK]
 - vim-nginx
 - vim-perl
 - vim-phperrormarker
 - vim-repeat [CHECK]
-- vim-scriptease
-- vim-surround
+- vim-scriptease [CHECK]
+- vim-surround [CHECK]
 - vim-systemd
 - vim-tagbar
 - vim-ultisnips
 - vim-vimproc [CHECK]
-- vim-youcompleteme
+- vim-youcompleteme [CHECK]

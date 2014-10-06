@@ -1,0 +1,80 @@
+# Maintainer: Andy Weidenbaum <archbaum@gmail.com>
+# Contributor: Erik Beran <eberan AT_gmail_DOT com>
+
+pkgname=vim-youcompleteme-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+_gitname=YouCompleteMe
+pkgver=20141005
+pkgrel=1
+pkgdesc="A code-completion engine for Vim ($USER)"
+arch=('i686' 'x86_64')
+depends=('clang' 'python2' 'vim')
+makedepends=('cmake' 'git' 'make' 'mono')
+groups=('vim-plugins')
+url="http://valloric.github.com/YouCompleteMe/"
+license=('GPL3')
+source=(git+https://github.com/valloric/YouCompleteMe
+        git+https://github.com/kennethreitz/requests
+        git+https://github.com/ross/requests-futures
+        git+https://github.com/valloric/ycmd
+        git+https://github.com/bewest/argparse
+        git+https://github.com/defnull/bottle
+        git+https://github.com/slezica/python-frozendict
+        git+https://github.com/davidhalter/jedi
+        git+https://github.com/Pylons/waitress
+        git+https://github.com/nosami/OmniSharpServer
+        git+https://github.com/icsharpcode/NRefactory
+        git+https://github.com/jbevain/cecil)
+sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP')
+
+pkgver() {
+  cd "$srcdir/YouCompleteMe"
+  git log -1 --format="%cd" --date=short | sed "s|-||g"
+}
+
+prepare() {
+  cd "$srcdir/YouCompleteMe"
+  git config remote.origin.url https://git::@${source##git+https://}.git
+
+  cd "$srcdir/YouCompleteMe"
+  git submodule init
+  git config submodule.third_party/requests.url "$srcdir/requests"
+  git config submodule.third_party/requests-futures.url "$srcdir/requests-futures"
+  git config submodule.third_party/ycmd.url "$srcdir/ycmd"
+  git submodule update
+
+  cd "$srcdir/YouCompleteMe/third_party/ycmd"
+  git submodule init
+  git config submodule.third_party/argparse.url "$srcdir/argparse"
+  git config submodule.third_party/bottle.url "$srcdir/bottle"
+  git config submodule.third_party/frozendict.url "$srcdir/python-frozendict"
+  git config submodule.third_party/jedi.url "$srcdir/jedi"
+  git config submodule.third_party/waitress.url "$srcdir/waitress"
+  git config submodule.third_party/OmniSharpServer.url "$srcdir/OmniSharpServer"
+  git submodule update
+
+  cd "$srcdir/YouCompleteMe/third_party/ycmd/third_party/OmniSharpServer"
+  git submodule init
+  git config submodule.NRefactory.url "$srcdir/NRefactory"
+  git config submodule.cecil.url "$srcdir/cecil"
+  git submodule update
+}
+
+build() {
+  mkdir -p "$srcdir/ycmd_build"
+  cd "$srcdir/ycmd_build"
+  cmake -G "Unix Makefiles" -DEXTERNAL_LIBCLANG_PATH=/usr/lib/libclang.so . "$srcdir/YouCompleteMe/third_party/ycmd/cpp"
+  make ycm_support_libs
+
+  cd "$srcdir/YouCompleteMe/third_party/ycmd/third_party/OmniSharpServer"
+  pwd
+  xbuild
+}
+
+package() {
+  cd $_gitname
+  install -dm 755 "$pkgdir/$HOME/.vim/plugged/$_gitname"
+  for _file in `ls -A`; do
+    cp -dpr --no-preserve=ownership $_file "$pkgdir/$HOME/.vim/plugged/$_gitname"
+  done
+  find "$pkgdir" -mindepth 1 -maxdepth 1 -exec chown -R $USER:users '{}' \;
+}
