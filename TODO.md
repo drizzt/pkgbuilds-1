@@ -1,33 +1,42 @@
 - pyclewn
 - python2-pyclewn
 - vim-align [CHECK]
+- vim-ansible-yaml [CHECK]
 - vim-cecutil [CHECK]
-- vim-dbext
-- vim-easytags
-- vim-fugitive
-- vim-gnupg
-- vim-guicolorscheme
-- vim-hilinktrace-git
+- vim-dbext [CHECK]
+- vim-easytags [CHECK]
+- vim-easy-align [CHECK]
+- vim-fugitive [CHECK]
+- vim-gnupg [CHECK]
+- vim-guicolorscheme [CHECK]
+- vim-hilinktrace-git [CHECK]
+- vim-ifdef [CHECK]
 - vim-indent-object [CHECK]
-- vim-iptables
-- vim-jad
-- vim-jedi
-- vim-jellybeans
-- vim-jquery
-- vim-ledger
-- vim-lustyexplorer
-- vim-matchit
+- vim-iptables [CHECK]
+- vim-jad [CHECK]
+- vim-jedi [CHECK]
+- vim-jellybeans [CHECK]
+- vim-jquery [CHECK]
+- vim-kolor [CHECK]
+- vim-ledger [CHECK]
+- vim-lustyexplorer [CHECK]
+- vim-matchit [CHECK]
 - vim-misc-xolox [CHECK]
+- vim-multiple-cursors [CHECK]
 - vim-nerdcommenter [vim-commentary]
 - vim-nerdtree [CHECK]
-- vim-nginx
-- vim-perl
-- vim-phperrormarker
+- vim-perl [CHECK]
+- vim-phperrormarker [CHECK]
+- vim-phpfolding [CHECK]
+- vim-promptline [CHECK]
 - vim-repeat [CHECK]
 - vim-scriptease [CHECK]
 - vim-surround [CHECK]
-- vim-systemd
-- vim-tagbar
-- vim-ultisnips
+- vim-systemd [CHECK]
+- vim-tabular [CHECK]
+- vim-tagbar [CHECK]
+- vim-tmuxline [CHECK]
+- vim-ultisnips [CHECK]
 - vim-vimproc [CHECK]
+- vim-virtualenv [CHECK]
 - vim-youcompleteme [CHECK]

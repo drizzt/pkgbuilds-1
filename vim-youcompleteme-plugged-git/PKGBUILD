@@ -12,10 +12,10 @@ makedepends=('cmake' 'git' 'make' 'mono')
 groups=('vim-plugins')
 url="http://valloric.github.com/YouCompleteMe/"
 license=('GPL3')
-source=(git+https://github.com/valloric/YouCompleteMe
+source=(git+https://github.com/Valloric/YouCompleteMe
         git+https://github.com/kennethreitz/requests
         git+https://github.com/ross/requests-futures
-        git+https://github.com/valloric/ycmd
+        git+https://github.com/Valloric/ycmd
         git+https://github.com/bewest/argparse
         git+https://github.com/defnull/bottle
         git+https://github.com/slezica/python-frozendict
