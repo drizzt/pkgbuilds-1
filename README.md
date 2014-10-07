@@ -169,6 +169,46 @@ endif
 " }}}
 ```
 
+#### hilinktrace
+
+Certain files, namely tags and syntax files, are often seen in multiple
+plugins. This poses a problem when different plugins are each vying for
+the exact same file location on disk. Overwriting one plugin's file
+with another plugin's file is a bad choice almost always.
+
+If you really wanted to, you could get around this limitation of global
+Vim plugin installation by playing with vim's `rtp` setting and installing
+global plugins in neatly isolated directories. Doesn’t that sound like
+far too much menial labor for what is really much better handled by a
+proper plugin manager like [plug](https://github.com/junegunn/vim-plug)?
+
+vim-hilinktrace-git/vimdoc.install:
+
+```bash
+post_install() {
+    cat >> /usr/share/vim/vimfiles/doc/tags <<EOF
+:HLT	hilinks.txt	/*:HLT*
+:HLT!	hilinks.txt	/*:HLT!*
+:HLTm	hilinks.txt	/*:HLTm*
+hilinks	hilinks.txt	/*hilinks*
+hilinks-contents	hilinks.txt	/*hilinks-contents*
+hilinks-copyright	hilinks.txt	/*hilinks-copyright*
+hilinks-history	hilinks.txt	/*hilinks-history*
+hilinks-manual	hilinks.txt	/*hilinks-manual*
+hilinks.txt	hilinks.txt	/*hilinks.txt*
+hlt	hilinks.txt	/*hlt*
+EOF
+    echo -n "Updating vim help tags..."
+    /usr/bin/vim --noplugins -u NONE -U NONE \
+        --cmd ":helptags /usr/share/vim/vimfiles/doc" --cmd ":q" > /dev/null 2>&1
+    echo "done."
+}
+```
+
+Without plug, I'd have to continue manually scrutinizing all plugins
+for potential file conflicts like the `/usr/share/vim/vimfiles/doc/tags`
+file, before attempting global installation.
+
 
 Gotchas
 -------
