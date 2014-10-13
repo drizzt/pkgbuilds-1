@@ -1,19 +1,17 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
-pkgname=vim-visualrepeat-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
-_gitname=visualrepeat
-pkgver=20131128
+pkgname=vim-ingo-library-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+_gitname=ingo-library
+pkgver=20140927
 pkgrel=1
-pkgdesc="Repeat command extended to visual mode ($USER)"
+pkgdesc="Vimscript library of common functions by Ingo Karkat ($USER)"
 arch=('any')
-depends=('vim'
-         "vim-ingo-library-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
+depends=('vim')
 makedepends=('git')
-optdepends=("vim-repeat-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: extended repeat in normal mode")
 groups=('vim-plugins')
-url="https://github.com/vim-scripts/visualrepeat"
-license=('MIT')
-source=(git+https://github.com/vim-scripts/visualrepeat)
+url="https://github.com/vim-scripts/ingo-library"
+license=('custom:vim')
+source=(git+https://github.com/vim-scripts/ingo-library)
 sha256sums=('SKIP')
 
 pkgver() {
