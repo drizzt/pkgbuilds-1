@@ -1,0 +1,37 @@
+# Maintainer: Andy Weidenbaum <archbaum@gmail.com>
+
+pkgname=vim-line-juggler-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+_gitname=LineJuggler
+pkgver=20140612
+pkgrel=1
+pkgdesc="Duplicate and move around lines ($USER)"
+arch=('any')
+depends=('vim'
+         "vim-ingo-library-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
+makedepends=('git')
+optdepends=("vim-repeat-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: normal mode repeat"
+            "vim-visualrepeat-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: visual mode repeat")
+groups=('vim-plugins')
+url="https://github.com/vim-scripts/LineJuggler"
+license=('custom:vim')
+source=(git+https://github.com/vim-scripts/LineJuggler)
+sha256sums=('SKIP')
+
+pkgver() {
+  cd $_gitname
+  git log -1 --format="%cd" --date=short | sed "s|-||g"
+}
+
+prepare() {
+  cd $_gitname
+  git config remote.origin.url https://git::@${source##git+https://}.git
+}
+
+package() {
+  cd $_gitname
+  install -dm 755 "$pkgdir/$HOME/.vim/plugged/$_gitname"
+  for _file in `ls -A`; do
+    cp -dpr --no-preserve=ownership $_file "$pkgdir/$HOME/.vim/plugged/$_gitname"
+  done
+  find "$pkgdir" -mindepth 1 -maxdepth 1 -exec chown -R $USER:users '{}' \;
+}
