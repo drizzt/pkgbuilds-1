@@ -7,7 +7,7 @@ pkgrel=1
 pkgdesc="Launch help in vertical window for wide-screen displays ($USER)"
 arch=('any')
 depends=('vim')
-makedepends=('git')
+makedepends=('dos2unix' 'git')
 groups=('vim-plugins')
 url="https://github.com/vim-scripts/VerticalHelp"
 license=('custom:vim')
@@ -22,6 +22,7 @@ pkgver() {
 prepare() {
   cd $_gitname
   git config remote.origin.url https://git::@${source##git+https://}.git
+  find . -name '.git' -prune -o -type f -exec dos2unix '{}' \;
 }
 
 package() {
