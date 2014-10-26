@@ -1,17 +1,17 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
-pkgname=vim-indexed-search-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
-_gitname=vim-indexed-search
-pkgver=20141010
+pkgname=vim-inline_edit-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+_gitname=inline_edit.vim
+pkgver=20131230
 pkgrel=1
-pkgdesc="Show 'Nth match out of M' during searches, by Yakov Lerner ($USER)"
+pkgdesc="Edit code that's embedded within other code ($USER)"
 arch=('any')
 depends=('vim')
 makedepends=('git')
 groups=('vim-plugins')
-url="https://github.com/henrik/vim-indexed-search"
+url="https://github.com/AndrewRadev/inline_edit.vim"
 license=('custom:vim')
-source=(git+https://github.com/henrik/vim-indexed-search)
+source=(git+https://github.com/AndrewRadev/inline_edit.vim)
 sha256sums=('SKIP')
 
 pkgver() {

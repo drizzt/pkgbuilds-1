@@ -2,16 +2,16 @@
 
 pkgname=vim-csv-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=csv.vim
-pkgver=20140327
+pkgver=20140910
 pkgrel=1
 pkgdesc="Vim filetype plugin for CSV files ($USER)"
 arch=('any')
 depends=('vim')
 makedepends=('git')
 groups=('vim-plugins')
-url="https://github.com/vim-scripts/csv.vim"
-license=('MIT')
-source=(git+https://github.com/vim-scripts/csv.vim)
+url="https://github.com/chrisbra/csv.vim"
+license=('custom:vim')
+source=(git+https://github.com/chrisbra/csv.vim)
 sha256sums=('SKIP')
 
 pkgver() {

@@ -1,17 +1,17 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
-pkgname=vim-indexed-search-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
-_gitname=vim-indexed-search
-pkgver=20141010
+pkgname=vim-rename-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+_gitname=rename.vim
+pkgver=20140413
 pkgrel=1
-pkgdesc="Show 'Nth match out of M' during searches, by Yakov Lerner ($USER)"
+pkgdesc="Rename the current file in the Vim buffer + retain relative path ($USER)"
 arch=('any')
 depends=('vim')
 makedepends=('git')
 groups=('vim-plugins')
-url="https://github.com/henrik/vim-indexed-search"
+url="https://github.com/henrik/rename.vim"
 license=('custom:vim')
-source=(git+https://github.com/henrik/vim-indexed-search)
+source=(git+https://github.com/henrik/rename.vim)
 sha256sums=('SKIP')
 
 pkgver() {

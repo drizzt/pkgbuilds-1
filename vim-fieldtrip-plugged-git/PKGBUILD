@@ -1,17 +1,19 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
-pkgname=vim-indexed-search-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
-_gitname=vim-indexed-search
-pkgver=20141010
+pkgname=vim-fieldtrip-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+_gitname=vim-fieldtrip
+pkgver=20140207
 pkgrel=1
-pkgdesc="Show 'Nth match out of M' during searches, by Yakov Lerner ($USER)"
+pkgdesc="Simple sideways.vim submode ($USER)"
 arch=('any')
-depends=('vim')
+depends=('vim'
+         "vim-sideways-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git"
+         "vim-submode-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
-url="https://github.com/henrik/vim-indexed-search"
-license=('custom:vim')
-source=(git+https://github.com/henrik/vim-indexed-search)
+url="https://github.com/tek/vim-fieldtrip"
+license=('MIT')
+source=(git+https://github.com/tek/vim-fieldtrip)
 sha256sums=('SKIP')
 
 pkgver() {
