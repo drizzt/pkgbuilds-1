@@ -2,18 +2,17 @@
 
 pkgname=vim-rainbow-parentheses-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=rainbow_parentheses.vim
-pkgver=20130304
+pkgver=20141101
 pkgrel=1
-pkgdesc="Better Rainbow Parentheses ($USER)"
+pkgdesc="Simpler Rainbow Parentheses ($USER)"
 arch=('any')
 depends=('vim')
 makedepends=('git')
 groups=('vim-plugins')
-url="https://github.com/kien/rainbow_parentheses.vim"
+url="https://github.com/junegunn/rainbow_parentheses.vim"
 license=('custom:vim')
-source=(git+https://github.com/kien/rainbow_parentheses.vim)
+source=(git+https://github.com/junegunn/rainbow_parentheses.vim)
 sha256sums=('SKIP')
-install=rainbow-parentheses.install
 
 pkgver() {
   cd $_gitname
