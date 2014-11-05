@@ -2,7 +2,7 @@
 
 pkgname=vim-signature-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-signature
-pkgver=20140924
+pkgver=20141103
 pkgrel=1
 pkgdesc="A plugin to toggle, display and navigate marks ($USER)"
 arch=('any')
