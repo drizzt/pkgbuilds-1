@@ -2,7 +2,7 @@
 
 pkgname=vim-dutyl-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-dutyl
-pkgver=20141004
+pkgver=20141017
 pkgrel=1
 pkgdesc="Coordinate D tools to work together for you ($USER)"
 arch=('any')
