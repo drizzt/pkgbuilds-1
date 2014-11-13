@@ -2,16 +2,17 @@
 
 pkgname=vim-markdown-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-markdown
-pkgver=20140711
+pkgver=20141006
 pkgrel=1
-pkgdesc="Vim Markdown runtime files by tpope ($USER)"
+pkgdesc="Syntax highlighting, matching rules and mappings for the original Markdown and extensions ($USER)"
 arch=('any')
-depends=('vim')
+depends=('vim'
+         "vim-tabular-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
-url="https://github.com/tpope/vim-markdown"
-license=('custom:vim')
-source=(git+https://github.com/tpope/vim-markdown)
+url="https://github.com/plasticboy/vim-markdown"
+license=('MIT')
+source=(git+https://github.com/plasticboy/vim-markdown)
 sha256sums=('SKIP')
 
 pkgver() {
