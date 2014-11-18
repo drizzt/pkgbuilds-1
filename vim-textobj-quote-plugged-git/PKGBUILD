@@ -2,7 +2,7 @@
 
 pkgname=vim-textobj-quote-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-textobj-quote
-pkgver=20140829
+pkgver=20141113
 pkgrel=1
 pkgdesc="Use ‘curly’ quote characters in Vim ($USER)"
 arch=('any')

@@ -2,7 +2,7 @@
 
 pkgname=vim-emmet-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=emmet-vim
-pkgver=20141009
+pkgver=20141106
 pkgrel=1
 pkgdesc="Expands abbreviations, similar to emmet ($USER)"
 arch=('any')

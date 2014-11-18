@@ -2,7 +2,7 @@
 
 pkgname=vim-php-indent-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=PHP-Indenting-for-VIm
-pkgver=20140907
+pkgver=20141011
 pkgrel=1
 pkgdesc="Updated version of the official Vim indent script for PHP ($USER)"
 arch=('any')
