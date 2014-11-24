@@ -1,0 +1,36 @@
+# Maintainer: Andy Weidenbaum <archbaum@gmail.com>
+
+pkgname=vim-merlin-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+_gitname=merlin
+pkgver=20141124
+pkgrel=1
+pkgdesc="Context sensitive completion for OCaml in Vim ($USER)"
+arch=('any')
+depends=('ocaml' 'ocaml-findlib' 'merlin-git' 'ocaml-yojson' 'python2' 'vim'
+         "vim-bufsync-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
+makedepends=('git')
+groups=('vim-plugins')
+url="https://github.com/atweiden/merlin"
+license=('MIT')
+source=(git+https://github.com/atweiden/merlin#branch=vim)
+sha256sums=('SKIP')
+options=('!strip')
+
+pkgver() {
+  cd $_gitname
+  git log -1 --format="%cd" --date=short | sed "s|-||g"
+}
+
+prepare() {
+  cd $_gitname
+  git config remote.origin.url https://git::@${source##git+https://}.git
+}
+
+package() {
+  cd $_gitname
+  install -dm 755 "$pkgdir/$HOME/.vim/plugged/$_gitname"
+  for _file in `ls -A`; do
+    cp -dpr --no-preserve=ownership $_file "$pkgdir/$HOME/.vim/plugged/$_gitname"
+  done
+  find "$pkgdir" -mindepth 1 -maxdepth 1 -exec chown -R $USER:users '{}' \;
+}
