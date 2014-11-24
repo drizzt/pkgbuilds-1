@@ -1,7 +1,7 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
 pkgname=vim-merlin-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
-_gitname=merlin
+_gitname=merlin.vim
 pkgver=20141124
 pkgrel=1
 pkgdesc="Context sensitive completion for OCaml in Vim ($USER)"
@@ -10,9 +10,9 @@ depends=('ocaml' 'ocaml-findlib' 'merlin-git' 'ocaml-yojson' 'python2' 'vim'
          "vim-bufsync-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
-url="https://github.com/atweiden/merlin"
+url="https://github.com/atweiden/merlin.vim"
 license=('MIT')
-source=(git+https://github.com/atweiden/merlin#branch=vim)
+source=(git+https://github.com/atweiden/merlin.vim#branch=vim)
 sha256sums=('SKIP')
 options=('!strip')
 
