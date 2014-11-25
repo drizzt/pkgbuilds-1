@@ -24,6 +24,9 @@ pkgver() {
 prepare() {
   cd $_gitname
   git config remote.origin.url https://git::@${source##git+https://}.git
+
+  msg 'Fixing Makefile...'
+  sed -i 's@prove@/usr/bin/core_perl/prove@' Makefile
 }
 
 check() {
