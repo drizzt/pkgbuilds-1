@@ -9,7 +9,7 @@ arch=('any')
 depends=('vim')
 makedepends=('git')
 optdepends=('scmindent-git: improved indentation'
-            'vim-scribble: syntax for scribble')
+            "vim-scribble-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git: syntax for scribble")
 groups=('vim-plugins')
 url="https://github.com/wlangstroth/vim-racket"
 license=('custom:vim')
