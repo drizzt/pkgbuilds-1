@@ -1,6 +1,6 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
-pkgname=vimerl-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+pkgname=vim-vimerl-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vimerl
 pkgver=20140930
 pkgrel=1
