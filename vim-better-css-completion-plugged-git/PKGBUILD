@@ -13,6 +13,7 @@ url="https://github.com/1995eaton/vim-better-css-completion"
 license=('custom:vim')
 source=(git+https://github.com/1995eaton/vim-better-css-completion)
 sha256sums=('SKIP')
+install=better-css-completion.install
 
 pkgver() {
   cd $_gitname

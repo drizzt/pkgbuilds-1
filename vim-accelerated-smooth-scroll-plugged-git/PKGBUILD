@@ -13,6 +13,7 @@ url="https://github.com/yonchu/accelerated-smooth-scroll"
 license=('MIT')
 source=(git+https://github.com/yonchu/accelerated-smooth-scroll)
 sha256sums=('SKIP')
+install=accelerated-smooth-scroll.install
 
 pkgver() {
   cd $_gitname

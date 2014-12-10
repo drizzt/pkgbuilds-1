@@ -13,6 +13,7 @@ url="https://github.com/jonathanfilip/vim-lucius"
 license=('custom:vim')
 source=(git+https://github.com/jonathanfilip/vim-lucius)
 sha256sums=('SKIP')
+install=lucius.install
 
 pkgver() {
   cd $_gitname

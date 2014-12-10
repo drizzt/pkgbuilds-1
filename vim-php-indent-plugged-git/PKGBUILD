@@ -14,6 +14,7 @@ url="https://github.com/2072/PHP-Indenting-for-VIm"
 license=('custom:vim')
 source=(git+https://github.com/2072/PHP-Indenting-for-VIm)
 sha256sums=('SKIP')
+install=php-indent.install
 
 pkgver() {
   cd $_gitname

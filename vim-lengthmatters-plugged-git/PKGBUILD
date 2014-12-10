@@ -13,6 +13,7 @@ url="https://github.com/whatyouhide/vim-lengthmatters"
 license=('WTFPL')
 source=(git+https://github.com/whatyouhide/vim-lengthmatters)
 sha256sums=('SKIP')
+install=lengthmatters.install
 
 pkgver() {
   cd $_gitname

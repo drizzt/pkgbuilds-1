@@ -13,6 +13,7 @@ url="https://github.com/itchyny/calendar.vim"
 license=('MIT')
 source=(git+https://github.com/itchyny/calendar.vim)
 sha256sums=('SKIP')
+install=calendar.install
 
 pkgver() {
   cd $_gitname

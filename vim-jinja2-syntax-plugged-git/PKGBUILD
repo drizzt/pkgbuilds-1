@@ -13,6 +13,7 @@ url="https://github.com/Glench/Vim-Jinja2-Syntax"
 license=('custom:vim')
 source=(git+https://github.com/Glench/Vim-Jinja2-Syntax)
 sha256sums=('SKIP')
+install=jinja2-syntax.install
 
 pkgver() {
   cd $_gitname

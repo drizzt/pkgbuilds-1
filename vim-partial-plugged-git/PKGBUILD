@@ -13,6 +13,7 @@ url="https://github.com/naquad/Partial.vim"
 license=('WTFPL')
 source=(git+https://github.com/naquad/Partial.vim)
 sha256sums=('SKIP')
+install=partial.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/tpope/vim-tbone"
 license=('custom:vim')
 source=(git+https://github.com/tpope/vim-tbone)
 sha256sums=('SKIP')
+install=tbone.install
 
 pkgver() {
   cd $_gitname

@@ -15,6 +15,7 @@ url="https://github.com/eagletmt/ghcmod-vim"
 license=('BSD3')
 source=(git+https://github.com/eagletmt/$_gitname)
 sha256sums=('SKIP')
+install=ghcmod.install
 
 pkgver() {
   cd $_gitname

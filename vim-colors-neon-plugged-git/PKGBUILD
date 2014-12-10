@@ -13,6 +13,7 @@ url="https://github.com/yuratomo/neon.vim"
 license=('MIT')
 source=(git+https://github.com/yuratomo/neon.vim)
 sha256sums=('SKIP')
+install=neon.install
 
 pkgver() {
   cd $_gitname

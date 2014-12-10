@@ -13,6 +13,7 @@ url="https://github.com/tracyone/pyclewn_linux"
 license=('GPL2')
 source=(git+https://github.com/tracyone/pyclewn_linux)
 sha256sums=('SKIP')
+install=pyclewn.install
 
 pkgver() {
   cd $_gitname

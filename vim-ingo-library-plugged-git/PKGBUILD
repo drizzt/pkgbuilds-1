@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/ingo-library"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/ingo-library)
 sha256sums=('SKIP')
+install=ingo-library.install
 
 pkgver() {
   cd $_gitname

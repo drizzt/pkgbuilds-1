@@ -14,6 +14,7 @@ url="https://github.com/Shougo/unite.vim"
 license=('MIT')
 source=(git+https://github.com/Shougo/unite.vim)
 sha256sums=('SKIP')
+install=unite.install
 
 pkgver() {
   cd $_gitname

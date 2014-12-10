@@ -14,6 +14,7 @@ url="https://github.com/jgors/vimux-ipy"
 license=('custom:vim')
 source=(git+https://github.com/jgors/vimux-ipy)
 sha256sums=('SKIP')
+install=vimux-ipy.install
 
 pkgver() {
   cd $_gitname

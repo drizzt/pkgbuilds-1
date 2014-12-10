@@ -13,6 +13,7 @@ url="https://github.com/chase/vim-ansible-yaml"
 license=('custom:vim')
 source=(git+https://github.com/chase/vim-ansible-yaml)
 sha256sums=('SKIP')
+install=ansible-yaml.install
 
 pkgver() {
   cd $_gitname

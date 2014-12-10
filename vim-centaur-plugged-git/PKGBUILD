@@ -13,6 +13,7 @@ url="https://github.com/tommcdo/vim-centaur"
 license=('custom:vim')
 source=(git+https://github.com/tommcdo/vim-centaur)
 sha256sums=('SKIP')
+install=centaur.install
 
 pkgver() {
   cd $_gitname

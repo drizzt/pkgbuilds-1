@@ -13,6 +13,7 @@ url="https://github.com/mitsuhiko/vim-python-combined"
 license=('BSD')
 source=(git+https://github.com/mitsuhiko/vim-python-combined)
 sha256sums=('SKIP')
+install=python-combined.install
 
 pkgver() {
   cd $_gitname

@@ -14,6 +14,7 @@ url="https://github.com/othree/yajs.vim"
 license=('custom:vim')
 source=(git+https://github.com/othree/yajs.vim)
 sha256sums=('SKIP')
+install=yajs.install
 
 pkgver() {
   cd $_gitname

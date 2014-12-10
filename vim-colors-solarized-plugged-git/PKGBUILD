@@ -13,6 +13,7 @@ url="https://github.com/altercation/vim-colors-solarized"
 license=('MIT')
 source=(git+https://github.com/altercation/vim-colors-solarized)
 sha256sums=('SKIP')
+install=solarized.install
 
 pkgver() {
   cd $_gitname

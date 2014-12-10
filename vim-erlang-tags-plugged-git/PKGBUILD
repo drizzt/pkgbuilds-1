@@ -13,6 +13,7 @@ url="https://github.com/vim-erlang/vim-erlang-tags"
 license=('Apache')
 source=(git+https://github.com/vim-erlang/vim-erlang-tags)
 sha256sums=('SKIP')
+install=erlang-tags.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/Twinside/vim-haskellFold"
 license=('custom:vim')
 source=(git+https://github.com/Twinside/vim-haskellFold)
 sha256sums=('SKIP')
+install=haskell-fold.install
 
 pkgver() {
   cd $_gitname

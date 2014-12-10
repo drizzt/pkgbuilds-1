@@ -13,6 +13,7 @@ url="https://github.com/wavded/vim-stylus"
 license=('MIT')
 source=(git+https://github.com/wavded/vim-stylus)
 sha256sums=('SKIP')
+install=stylus.install
 
 pkgver() {
   cd $_gitname

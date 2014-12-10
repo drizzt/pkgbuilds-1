@@ -13,6 +13,7 @@ url="https://github.com/tpope/vim-projectionist"
 license=('custom:vim')
 source=(git+https://github.com/tpope/vim-projectionist)
 sha256sums=('SKIP')
+install=projectionist.install
 
 pkgver() {
   cd $_gitname

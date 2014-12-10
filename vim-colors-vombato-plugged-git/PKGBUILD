@@ -13,6 +13,7 @@ url="https://github.com/molok/vim-vombato-colorscheme"
 license=('GPL')
 source=(git+https://github.com/molok/vim-vombato-colorscheme)
 sha256sums=('SKIP')
+install=vombato.install
 
 pkgver() {
   cd $_gitname

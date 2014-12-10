@@ -13,6 +13,7 @@ url="https://github.com/1995eaton/vim-better-javascript-completion"
 license=('custom:vim')
 source=(git+https://github.com/1995eaton/vim-better-javascript-completion)
 sha256sums=('SKIP')
+install=better-javascript-completion.install
 
 pkgver() {
   cd $_gitname

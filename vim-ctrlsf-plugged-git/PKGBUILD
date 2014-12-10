@@ -15,6 +15,7 @@ url="https://github.com/dyng/ctrlsf.vim"
 license=('custom:vim')
 source=(git+https://github.com/dyng/ctrlsf.vim)
 sha256sums=('SKIP')
+install=ctrlsf.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/prurigro/vim-archversion"
 license=('MIT')
 source=(git+https://github.com/prurigro/vim-archversion)
 sha256sums=('SKIP')
+install=archversion.install
 
 pkgver() {
   cd $_gitname

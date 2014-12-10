@@ -13,6 +13,7 @@ url="https://github.com/ludovicchabant/vim-lawrencium"
 license=('custom:vim')
 source=(git+https://github.com/ludovicchabant/$_gitname)
 sha256sums=('SKIP')
+install=lawrencium.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/vimtaku/hl_matchit.vim"
 license=('MIT')
 source=(git+https://github.com/vimtaku/hl_matchit.vim)
 sha256sums=('SKIP')
+install=hl_matchit.install
 
 pkgver() {
   cd $_gitname

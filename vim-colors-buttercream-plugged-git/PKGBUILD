@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/buttercream.vim"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/buttercream.vim)
 sha256sums=('SKIP')
+install=buttercream.install
 
 pkgver() {
   cd $_gitname

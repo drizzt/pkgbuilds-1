@@ -13,6 +13,7 @@ url="https://github.com/tpope/vim-haml"
 license=('MIT')
 source=(git+https://github.com/tpope/vim-haml)
 sha256sums=('SKIP')
+install=haml.install
 
 pkgver() {
   cd $_gitname

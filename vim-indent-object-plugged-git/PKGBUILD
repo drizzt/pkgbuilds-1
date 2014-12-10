@@ -13,6 +13,7 @@ url="https://github.com/michaeljsmith/vim-indent-object"
 license=('MIT')
 source=(git+https://github.com/michaeljsmith/vim-indent-object)
 sha256sums=('SKIP')
+install=indent-object.install
 
 pkgver() {
   cd $_gitname

@@ -16,6 +16,7 @@ url="https://github.com/vim-scripts/CSApprox"
 license=('custom')
 source=(git+https://github.com/vim-scripts/$_gitname)
 sha256sums=('SKIP')
+install=csapprox.install
 
 pkgver() {
   cd $_gitname

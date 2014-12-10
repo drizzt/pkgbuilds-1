@@ -13,6 +13,7 @@ url="https://github.com/mitsuhiko/vim-json"
 license=('BSD')
 source=(git+https://github.com/mitsuhiko/vim-json)
 sha256sums=('SKIP')
+install=json.install
 
 pkgver() {
   cd $_gitname

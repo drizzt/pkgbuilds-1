@@ -13,6 +13,7 @@ url="https://github.com/octol/vim-cpp-enhanced-highlight"
 license=('custom:vim')
 source=(git+https://github.com/octol/vim-cpp-enhanced-highlight)
 sha256sums=('SKIP')
+install=cpp-enhanced-highlight.install
 
 pkgver() {
   cd $_gitname

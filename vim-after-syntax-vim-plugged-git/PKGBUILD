@@ -13,6 +13,7 @@ url="https://github.com/trapd00r/vim-after-syntax-vim"
 license=('BSD')
 source=(git+https://github.com/trapd00r/vim-after-syntax-vim)
 sha256sums=('SKIP')
+install=after-syntax-vim.install
 
 pkgver() {
   cd $_gitname

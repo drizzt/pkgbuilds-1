@@ -13,6 +13,7 @@ url="https://github.com/mrkn/mrkn256.vim"
 license=('custom:vim')
 source=(git+https://github.com/mrkn/mrkn256.vim)
 sha256sums=('SKIP')
+install=mrkn256.install
 
 pkgver() {
   cd $_gitname

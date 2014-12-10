@@ -13,6 +13,7 @@ url="https://github.com/epeli/slimux"
 license=('MIT')
 source=(git+https://github.com/epeli/slimux)
 sha256sums=('SKIP')
+install=slimux.install
 
 pkgver() {
   cd $_gitname

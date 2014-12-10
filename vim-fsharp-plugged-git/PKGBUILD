@@ -13,6 +13,7 @@ url="https://github.com/kongo2002/fsharp-vim"
 license=('custom:vim')
 source=(git+https://github.com/kongo2002/fsharp-vim)
 sha256sums=('SKIP')
+install=fsharp.install
 
 pkgver() {
   cd $_gitname

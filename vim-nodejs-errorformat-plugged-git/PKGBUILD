@@ -13,6 +13,7 @@ url="https://github.com/felixge/vim-nodejs-errorformat"
 license=('MIT')
 source=(git+https://github.com/felixge/vim-nodejs-errorformat)
 sha256sums=('SKIP')
+install=nodejs-errorformat.install
 
 pkgver() {
   cd $_gitname

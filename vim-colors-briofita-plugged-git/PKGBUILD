@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/Briofita"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/Briofita)
 sha256sums=('SKIP')
+install=briofita.install
 
 pkgver() {
   cd $_gitname

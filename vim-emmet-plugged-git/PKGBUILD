@@ -13,6 +13,7 @@ url="https://github.com/mattn/emmet-vim"
 license=('BSD')
 source=(git+https://github.com/mattn/emmet-vim)
 sha256sums=('SKIP')
+install=emmet.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/groenewege/vim-less"
 license=('MIT')
 source=(git+https://github.com/groenewege/vim-less)
 sha256sums=('SKIP')
+install=less.install
 
 pkgver() {
   cd $_gitname

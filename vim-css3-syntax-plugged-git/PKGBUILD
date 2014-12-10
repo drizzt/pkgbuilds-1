@@ -13,6 +13,7 @@ url="https://github.com/hail2u/vim-css3-syntax"
 license=('MIT')
 source=(git+https://github.com/hail2u/vim-css3-syntax)
 sha256sums=('SKIP')
+install=css3-syntax.install
 
 pkgver() {
   cd $_gitname

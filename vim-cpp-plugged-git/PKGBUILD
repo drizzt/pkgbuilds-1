@@ -13,6 +13,7 @@ url="https://github.com/vim-jp/cpp-vim"
 license=('custom:vim')
 source=(git+https://github.com/vim-jp/cpp-vim)
 sha256sums=('SKIP')
+install=cpp.install
 
 pkgver() {
   cd $_gitname

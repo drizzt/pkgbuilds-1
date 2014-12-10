@@ -13,6 +13,7 @@ url="https://github.com/whatyouhide/vim-tmux-syntax"
 license=('WTFPL')
 source=(git+https://github.com/whatyouhide/vim-tmux-syntax)
 sha256sums=('SKIP')
+install=tmux-syntax.install
 
 pkgver() {
   cd $_gitname

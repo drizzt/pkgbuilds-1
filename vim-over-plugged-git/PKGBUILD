@@ -13,6 +13,7 @@ url="https://github.com/osyo-manga/vim-over"
 license=('NYSL')
 source=(git+https://github.com/osyo-manga/vim-over)
 sha256sums=('SKIP')
+install=over.install
 
 pkgver() {
   cd $_gitname

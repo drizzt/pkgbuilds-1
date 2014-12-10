@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/ReplaceWithRegister"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/ReplaceWithRegister)
 sha256sums=('SKIP')
+install=replace-with-register.install
 
 pkgver() {
   cd $_gitname

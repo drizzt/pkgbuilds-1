@@ -13,6 +13,7 @@ url="https://github.com/AndrewRadev/linediff.vim"
 license=('custom:vim')
 source=(git+https://github.com/AndrewRadev/linediff.vim)
 sha256sums=('SKIP')
+install=linediff.install
 
 pkgver() {
   cd $_gitname

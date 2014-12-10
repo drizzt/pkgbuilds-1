@@ -13,6 +13,7 @@ url="https://github.com/Alotor/groovim"
 license=('custom:vim')
 source=(git+https://github.com/Alotor/groovim)
 sha256sums=('SKIP')
+install=groovim.install
 
 pkgver() {
   cd $_gitname

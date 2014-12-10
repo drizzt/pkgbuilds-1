@@ -13,6 +13,7 @@ url="http://mattreduce.github.io/vim-mix/"
 license=('custom:vim')
 source=(git+https://github.com/mattreduce/vim-mix)
 sha256sums=('SKIP')
+install=mix.install
 
 pkgver() {
   cd $_gitname

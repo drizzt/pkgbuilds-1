@@ -13,6 +13,7 @@ url="https://github.com/atweiden/vim-colors-miro8"
 license=('custom:vim')
 source=(git+https://github.com/atweiden/vim-colors-miro8)
 sha256sums=('SKIP')
+install=miro8.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/krisajenkins/vim-java-sql"
 license=('MIT')
 source=(git+https://github.com/krisajenkins/vim-java-sql)
 sha256sums=('SKIP')
+install=java-sql.install
 
 pkgver() {
   cd $_gitname

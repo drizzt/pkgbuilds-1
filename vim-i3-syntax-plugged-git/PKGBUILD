@@ -13,6 +13,7 @@ url="https://github.com/PotatoesMaster/i3-vim-syntax"
 license=('custom:vim')
 source=(git+https://github.com/PotatoesMaster/i3-vim-syntax)
 sha256sums=('SKIP')
+install=i3-syntax.install
 
 pkgver() {
   cd $_gitname

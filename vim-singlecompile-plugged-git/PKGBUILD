@@ -13,6 +13,7 @@ url="https://github.com/xuhdev/SingleCompile"
 license=('GPL3')
 source=(git+https://github.com/xuhdev/SingleCompile)
 sha256sums=('SKIP')
+install=singlecompile.install
 
 pkgver() {
   cd $_gitname

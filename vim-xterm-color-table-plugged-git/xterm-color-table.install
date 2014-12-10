@@ -1,9 +1,17 @@
+_gitname=xterm-color-table.vim
+
 post_install() {
   printf "$colortable\n"
 }
 
 post_upgrade() {
   post_install
+}
+
+post_remove() {
+  echo -n "Removing $_gitname directory... "
+  rm -rf "$HOME/.vim/plugged/$_gitname"
+  echo "done"
 }
 
 read -d '' colortable <<'EOF'

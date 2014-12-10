@@ -13,6 +13,7 @@ url="https://github.com/GutenYe/json5.vim"
 license=('MIT')
 source=(git+https://github.com/GutenYe/json5.vim)
 sha256sums=('SKIP')
+install=json5.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/vim-ruby/vim-ruby"
 license=('GPL')
 source=(git+https://github.com/vim-ruby/vim-ruby)
 sha256sums=('SKIP')
+install=ruby.install
 
 pkgver() {
   cd $_gitname

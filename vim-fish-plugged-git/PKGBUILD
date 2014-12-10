@@ -13,6 +13,7 @@ url="https://github.com/aliva/vim-fish"
 license=('custom:vim')
 source=(git+https://github.com/aliva/vim-fish)
 sha256sums=('SKIP')
+install=fish.install
 
 pkgver() {
   cd $_gitname

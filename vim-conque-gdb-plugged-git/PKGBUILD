@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/Conque-GDB"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/Conque-GDB)
 sha256sums=('SKIP')
+install=conque-gdb.install
 
 pkgver() {
   cd $_gitname

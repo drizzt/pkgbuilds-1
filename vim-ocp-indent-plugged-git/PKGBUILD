@@ -13,6 +13,7 @@ url="https://github.com/OCamlPro/ocp-indent"
 license=('custom:LGPL3')
 source=(git+https://github.com/OCamlPro/$_gitname)
 sha256sums=('SKIP')
+install=ocp-indent.install
 
 pkgver() {
   cd $_gitname

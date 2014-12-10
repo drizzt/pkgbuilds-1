@@ -13,6 +13,7 @@ url="https://github.com/elixir-lang/vim-elixir"
 license=('custom:vim')
 source=(git+https://github.com/elixir-lang/vim-elixir)
 sha256sums=('SKIP')
+install=elixir.install
 
 pkgver() {
   cd $_gitname

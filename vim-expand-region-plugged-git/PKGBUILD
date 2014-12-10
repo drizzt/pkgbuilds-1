@@ -13,6 +13,7 @@ url="https://github.com/terryma/vim-expand-region"
 license=('MIT')
 source=(git+https://github.com/terryma/vim-expand-region)
 sha256sums=('SKIP')
+install=expand-region.install
 
 pkgver() {
   cd $_gitname

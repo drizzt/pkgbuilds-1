@@ -13,6 +13,7 @@ url="https://github.com/zeis/vim-kolor"
 license=('MIT')
 source=(git+https://github.com/zeis/vim-kolor)
 sha256sums=('SKIP')
+install=kolor.install
 
 pkgver() {
   cd $_gitname

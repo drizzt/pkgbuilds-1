@@ -13,6 +13,7 @@ url="https://github.com/coderifous/textobj-word-column.vim"
 license=('custom:vim')
 source=(git+https://github.com/coderifous/textobj-word-column.vim)
 sha256sums=('SKIP')
+install=textobj-word-column.install
 
 pkgver() {
   cd $_gitname

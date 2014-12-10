@@ -14,6 +14,7 @@ url="https://github.com/johnantoni/grb256"
 license=('custom:vim')
 source=(git+https://github.com/johnantoni/grb256)
 sha256sums=('SKIP')
+install=grb256.install
 
 pkgver() {
   cd $_gitname

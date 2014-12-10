@@ -13,6 +13,7 @@ url="https://github.com/trapd00r/neverland-vim-theme"
 license=('custom:vim')
 source=(git+https://github.com/trapd00r/neverland-vim-theme)
 sha256sums=('SKIP')
+install=neverland.install
 
 pkgver() {
   cd $_gitname

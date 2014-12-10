@@ -13,6 +13,7 @@ url="https://github.com/nanotech/jellybeans.vim"
 license=('custom:vim')
 source=(git+https://github.com/nanotech/jellybeans.vim)
 sha256sums=('SKIP')
+install=jellybeans.install
 
 pkgver() {
   cd $_gitname

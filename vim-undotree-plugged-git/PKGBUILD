@@ -13,6 +13,7 @@ url="https://github.com/mbbill/undotree"
 license=('BSD')
 source=(git+https://github.com/mbbill/undotree)
 sha256sums=('SKIP')
+install=undotree.install
 
 pkgver() {
   cd $_gitname

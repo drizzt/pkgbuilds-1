@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/matrix.vim"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/$_gitname#commit=7fcd844d6d882b41437f277adf9351fd25f64be1)
 sha256sums=('SKIP')
+install=matrix.install
 
 pkgver() {
   cd $_gitname

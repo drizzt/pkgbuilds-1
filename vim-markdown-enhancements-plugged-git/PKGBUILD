@@ -13,6 +13,7 @@ url="https://github.com/mattly/vim-markdown-enhancements"
 license=('MIT')
 source=(git+https://github.com/mattly/vim-markdown-enhancements)
 sha256sums=('SKIP')
+install=markdown-enhancements.install
 
 pkgver() {
   cd $_gitname

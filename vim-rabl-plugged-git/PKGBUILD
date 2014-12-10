@@ -13,6 +13,7 @@ url="https://github.com/yaymukund/vim-rabl"
 license=('MIT')
 source=(git+https://github.com/yaymukund/vim-rabl)
 sha256sums=('SKIP')
+install=rabl.install
 
 pkgver() {
   cd $_gitname

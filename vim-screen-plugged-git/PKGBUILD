@@ -13,6 +13,7 @@ url="https://github.com/ervandew/screen"
 license=('BSD')
 source=(git+https://github.com/ervandew/screen)
 sha256sums=('SKIP')
+install=screen.install
 
 pkgver() {
   cd $_gitname

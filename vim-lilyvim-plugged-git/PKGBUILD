@@ -13,6 +13,7 @@ url="https://github.com/lfairy/lilyvim"
 license=('custom:vim')
 source=(git+https://github.com/lfairy/lilyvim)
 sha256sums=('SKIP')
+install=lilyvim.install
 
 pkgver() {
   cd $_gitname

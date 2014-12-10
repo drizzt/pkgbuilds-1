@@ -13,6 +13,7 @@ url="https://github.com/junegunn/rainbow_parentheses.vim"
 license=('custom:vim')
 source=(git+https://github.com/junegunn/rainbow_parentheses.vim)
 sha256sums=('SKIP')
+install=rainbow-parentheses.install
 
 pkgver() {
   cd $_gitname

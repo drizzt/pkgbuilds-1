@@ -13,6 +13,7 @@ url="https://github.com/jmcantrell/vim-reporoot"
 license=('custom:vim')
 source=(git+https://github.com/jmcantrell/vim-reporoot)
 sha256sums=('SKIP')
+install=reporoot.install
 
 pkgver() {
   cd $_gitname

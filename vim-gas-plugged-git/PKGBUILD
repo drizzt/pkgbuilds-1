@@ -13,6 +13,7 @@ url="https://github.com/Shirk/vim-gas"
 license=('BSD')
 source=(git+https://github.com/Shirk/vim-gas)
 sha256sums=('SKIP')
+install=gas.install
 
 pkgver() {
   cd $_gitname

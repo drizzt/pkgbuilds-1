@@ -13,6 +13,7 @@ url="https://github.com/slim-template/vim-slim"
 license=('MIT')
 source=(git+https://github.com/slim-template/vim-slim)
 sha256sums=('SKIP')
+install=slim.install
 
 pkgver() {
   cd $_gitname

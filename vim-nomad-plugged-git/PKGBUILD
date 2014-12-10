@@ -13,6 +13,7 @@ url="https://github.com/buztard/vim-nomad"
 license=('custom:vim')
 source=(git+https://github.com/buztard/vim-nomad)
 sha256sums=('SKIP')
+install=nomad.install
 
 pkgver() {
   cd $_gitname

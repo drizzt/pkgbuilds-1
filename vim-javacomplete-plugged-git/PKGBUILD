@@ -13,6 +13,7 @@ url="https://github.com/youjumpiwatch/vim-javacomplete"
 license=('custom:vim')
 source=(git+https://github.com/youjumpiwatch/vim-javacomplete)
 sha256sums=('SKIP')
+install=javacomplete.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/jmcantrell/vim-numbered"
 license=('custom:vim')
 source=(git+https://github.com/jmcantrell/vim-numbered)
 sha256sums=('SKIP')
+install=numbered.install
 
 pkgver() {
   cd $_gitname

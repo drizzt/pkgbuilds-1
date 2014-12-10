@@ -13,6 +13,7 @@ url="https://github.com/talek/obvious-resize"
 license=('GPL3')
 source=(git+https://github.com/talek/obvious-resize)
 sha256sums=('SKIP')
+install=obvious-resize.install
 
 pkgver() {
   cd $_gitname

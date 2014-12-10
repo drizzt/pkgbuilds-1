@@ -13,6 +13,7 @@ url="https://github.com/marijnh/tern_for_vim"
 license=('custom:vim')
 source=(git+https://github.com/marijnh/tern_for_vim)
 sha256sums=('SKIP')
+install=tern.install
 
 pkgver() {
   cd $_gitname

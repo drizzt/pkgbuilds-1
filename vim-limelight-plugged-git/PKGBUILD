@@ -14,6 +14,7 @@ url="https://github.com/junegunn/limelight.vim"
 license=('MIT')
 source=(git+https://github.com/junegunn/limelight.vim)
 sha256sums=('SKIP')
+install=limelight.install
 
 pkgver() {
   cd $_gitname

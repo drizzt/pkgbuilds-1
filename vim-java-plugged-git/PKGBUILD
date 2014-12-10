@@ -13,6 +13,7 @@ url="https://github.com/gabesoft/vim-java"
 license=('custom:vim')
 source=(git+https://github.com/gabesoft/vim-java)
 sha256sums=('SKIP')
+install=java.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/uguu-org/vim-matrix-screensaver"
 license=('MIT')
 source=(git+https://github.com/uguu-org/vim-matrix-screensaver)
 sha256sums=('SKIP')
+install=matrix-screensaver.install
 
 pkgver() {
   cd $_gitname

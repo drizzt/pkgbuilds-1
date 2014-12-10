@@ -13,6 +13,7 @@ url="https://github.com/KabbAmine/vCoolor.vim"
 license=('custom:vim')
 source=(git+https://github.com/KabbAmine/vCoolor.vim)
 sha256sums=('SKIP')
+install=vcoolor.install
 
 pkgver() {
   cd $_gitname

@@ -15,6 +15,7 @@ url="https://github.com/edkolev/promptline.vim"
 license=('MIT')
 source=(git+https://github.com/edkolev/promptline.vim)
 sha256sums=('SKIP')
+install=promptline.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/moll/vim-node"
 license=('AGPL3')
 source=(git+https://github.com/moll/$_gitname)
 sha256sums=('SKIP')
+install=node.install
 
 pkgver() {
   cd $_gitname

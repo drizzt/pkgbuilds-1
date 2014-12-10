@@ -13,6 +13,7 @@ url="https://github.com/chriskempson/base16-vim"
 license=('custom:vim')
 source=(git+https://github.com/chriskempson/base16-vim)
 sha256sums=('SKIP')
+install=base16.install
 
 pkgver() {
   cd $_gitname

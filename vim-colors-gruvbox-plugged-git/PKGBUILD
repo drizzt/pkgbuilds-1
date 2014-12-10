@@ -13,6 +13,7 @@ url="https://github.com/morhetz/gruvbox"
 license=('MIT')
 source=(git+https://github.com/morhetz/gruvbox)
 sha256sums=('SKIP')
+install=gruvbox.install
 
 pkgver() {
   cd $_gitname

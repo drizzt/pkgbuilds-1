@@ -13,6 +13,7 @@ url="https://github.com/wellle/targets.vim"
 license=('MIT')
 source=(git+https://github.com/wellle/targets.vim)
 sha256sums=('SKIP')
+install=targets.install
 
 pkgver() {
   cd $_gitname

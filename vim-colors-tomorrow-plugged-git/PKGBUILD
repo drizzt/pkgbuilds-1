@@ -13,6 +13,7 @@ url="https://github.com/chriskempson/vim-tomorrow-theme"
 license=('custom:vim')
 source=(git+https://github.com/chriskempson/vim-tomorrow-theme)
 sha256sums=('SKIP')
+install=tomorrow.install
 
 pkgver() {
   cd $_gitname

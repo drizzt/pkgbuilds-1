@@ -13,6 +13,7 @@ url="https://github.com/jeetsukumaran/vim-markology"
 license=('MIT')
 source=(git+https://github.com/jeetsukumaran/vim-markology)
 sha256sums=('SKIP')
+install=markology.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/tyru/capture.vim"
 license=('custom:vim')
 source=(git+https://github.com/tyru/capture.vim)
 sha256sums=('SKIP')
+install=capture.install
 
 pkgver() {
   cd $_gitname

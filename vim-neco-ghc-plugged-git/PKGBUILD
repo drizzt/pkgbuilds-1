@@ -15,6 +15,7 @@ url="https://github.com/eagletmt/neco-ghc"
 license=('MIT')
 source=(git+https://github.com/eagletmt/neco-ghc)
 sha256sums=('SKIP')
+install=neco-ghc.install
 
 pkgver() {
   cd $_gitname

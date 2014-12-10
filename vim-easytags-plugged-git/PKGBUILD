@@ -15,6 +15,7 @@ url="https://github.com/xolox/vim-easytags"
 license=('MIT')
 source=(git+https://github.com/xolox/vim-easytags)
 sha256sums=('SKIP')
+install=easytags.install
 
 pkgver() {
   cd $_gitname

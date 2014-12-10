@@ -13,6 +13,7 @@ url="https://github.com/othree/html5.vim"
 license=('MIT')
 source=(git+https://github.com/othree/html5.vim)
 sha256sums=('SKIP')
+install=html5.install
 
 pkgver() {
   cd $_gitname

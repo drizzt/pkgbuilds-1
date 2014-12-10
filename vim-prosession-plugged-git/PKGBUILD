@@ -14,6 +14,7 @@ url="https://github.com/dhruvasagar/vim-prosession"
 license=('custom:vim')
 source=(git+https://github.com/dhruvasagar/vim-prosession)
 sha256sums=('SKIP')
+install=prosession.install
 
 pkgver() {
   cd $_gitname

@@ -14,6 +14,7 @@ url="https://github.com/atweiden/merlin.vim"
 license=('MIT')
 source=(git+https://github.com/atweiden/merlin.vim#branch=vim)
 sha256sums=('SKIP')
+install=merlin.install
 options=('!strip')
 
 pkgver() {

@@ -1,0 +1,6 @@
+_gitname=calendar.vim
+post_remove() {
+  echo -n "Removing $_gitname directory... "
+  rm -rf "$HOME/.vim/plugged/$_gitname"
+  echo "done"
+}

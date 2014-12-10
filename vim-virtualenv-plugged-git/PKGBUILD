@@ -13,6 +13,7 @@ url="https://github.com/jmcantrell/vim-virtualenv"
 license=('custom:vim')
 source=(git+https://github.com/jmcantrell/vim-virtualenv)
 sha256sums=('SKIP')
+install=virtualenv.install
 
 pkgver() {
   cd $_gitname

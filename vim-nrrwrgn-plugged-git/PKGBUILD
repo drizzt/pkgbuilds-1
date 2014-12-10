@@ -13,6 +13,7 @@ url="https://github.com/chrisbra/NrrwRgn"
 license=('custom:vim')
 source=(git+https://github.com/chrisbra/NrrwRgn)
 sha256sums=('SKIP')
+install=nrrwrgn.install
 
 pkgver() {
   cd $_gitname

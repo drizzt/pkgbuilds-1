@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/phpErrorMarker"
 license=('GPL2')
 source=(git+https://github.com/vim-scripts/phpErrorMarker)
 sha256sums=('SKIP')
+install=php-error-marker.install
 
 pkgver() {
   cd $_gitname

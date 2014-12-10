@@ -14,6 +14,7 @@ url="https://github.com/jistr/vim-nerdtree-tabs"
 license=('Apache')
 source=(git+https://github.com/jistr/vim-nerdtree-tabs)
 sha256sums=('SKIP')
+install=nerdtree-tabs.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/endel/vim-github-colorscheme"
 license=('custom:vim')
 source=(git+https://github.com/endel/vim-github-colorscheme)
 sha256sums=('SKIP')
+install=github.install
 
 pkgver() {
   cd $_gitname

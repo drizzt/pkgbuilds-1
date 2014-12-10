@@ -13,6 +13,7 @@ url="https://github.com/rhysd/clever-f.vim"
 license=('MIT')
 source=(git+https://github.com/rhysd/clever-f.vim)
 sha256sums=('SKIP')
+install=clever-f.install
 
 pkgver() {
   cd $_gitname

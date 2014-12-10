@@ -14,6 +14,7 @@ url="https://github.com/vim-scripts/lettuce.vim"
 license=('GPL3')
 source=(git+https://github.com/vim-scripts/$_gitname)
 sha256sums=('SKIP')
+install=lettuce.install
 
 pkgver() {
   cd $_gitname

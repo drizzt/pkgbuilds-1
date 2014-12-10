@@ -13,6 +13,7 @@ url="https://github.com/toyamarinyon/vim-swift"
 license=('GPL')
 source=(git+https://github.com/toyamarinyon/vim-swift)
 sha256sums=('SKIP')
+install=swift.install
 
 pkgver() {
   cd $_gitname

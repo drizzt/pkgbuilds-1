@@ -13,6 +13,7 @@ url="https://github.com/wting/rust.vim"
 license=('custom:vim')
 source=(git+https://github.com/wting/rust.vim)
 sha256sums=('SKIP')
+install=rust.install
 
 pkgver() {
   cd $_gitname

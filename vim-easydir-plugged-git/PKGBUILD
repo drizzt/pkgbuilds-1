@@ -13,6 +13,7 @@ url="https://github.com/dockyard/vim-easydir"
 license=('MIT')
 source=(git+https://github.com/dockyard/vim-easydir)
 sha256sums=('SKIP')
+install=easydir.install
 
 pkgver() {
   cd $_gitname

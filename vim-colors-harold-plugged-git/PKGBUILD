@@ -13,6 +13,7 @@ url="https://github.com/PotatoesMaster/vim-colors-harold"
 license=('custom:vim')
 source=(git+https://github.com/PotatoesMaster/vim-colors-harold)
 sha256sums=('SKIP')
+install=harold.install
 
 pkgver() {
   cd $_gitname

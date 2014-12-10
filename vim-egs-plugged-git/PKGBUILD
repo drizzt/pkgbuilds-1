@@ -14,6 +14,7 @@ url="https://github.com/unc0/vim-egs"
 license=('WTFPL')
 source=(git+https://github.com/unc0/vim-egs)
 sha256sums=('SKIP')
+install=egs.install
 
 pkgver() {
   cd $_gitname

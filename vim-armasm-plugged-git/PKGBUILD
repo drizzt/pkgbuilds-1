@@ -13,6 +13,7 @@ url="https://github.com/alisdair/vim-armasm"
 license=('MIT')
 source=(git+https://github.com/alisdair/vim-armasm)
 sha256sums=('SKIP')
+install=armasm.install
 
 pkgver() {
   cd $_gitname

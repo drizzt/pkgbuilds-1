@@ -13,6 +13,7 @@ url="https://github.com/chrisbra/Recover.vim"
 license=('custom:vim')
 source=(git+https://github.com/chrisbra/Recover.vim)
 sha256sums=('SKIP')
+install=recover.install
 
 pkgver() {
   cd $_gitname

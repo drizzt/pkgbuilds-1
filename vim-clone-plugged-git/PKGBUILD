@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/clone"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/clone)
 sha256sums=('SKIP')
+install=clone.install
 
 pkgver() {
   cd $_gitname

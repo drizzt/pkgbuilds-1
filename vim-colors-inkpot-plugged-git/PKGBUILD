@@ -13,6 +13,7 @@ url="https://github.com/ciaranm/inkpot"
 license=('custom:vim')
 source=(git+https://github.com/ciaranm/inkpot)
 sha256sums=('SKIP')
+install=inkpot.install
 
 pkgver() {
   cd $_gitname

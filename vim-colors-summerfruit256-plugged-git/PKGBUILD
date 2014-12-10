@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/summerfruit256.vim"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/$_gitname)
 sha256sums=('SKIP')
+install=summerfruit256.install
 
 pkgver() {
   cd $_gitname

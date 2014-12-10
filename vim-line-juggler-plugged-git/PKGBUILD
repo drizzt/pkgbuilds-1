@@ -16,6 +16,7 @@ url="https://github.com/vim-scripts/LineJuggler"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/LineJuggler)
 sha256sums=('SKIP')
+install=line-juggler.install
 
 pkgver() {
   cd $_gitname

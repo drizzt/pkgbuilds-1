@@ -13,6 +13,7 @@ url="https://github.com/unc0/vim-gorilla-script"
 license=('WTFPL')
 source=(git+https://github.com/unc0/vim-gorilla-script)
 sha256sums=('SKIP')
+install=gorillascript.install
 
 pkgver() {
   cd $_gitname

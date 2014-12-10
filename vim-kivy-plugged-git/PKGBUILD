@@ -13,6 +13,7 @@ url="https://github.com/ajford/vimkivy"
 license=('MIT')
 source=(git+https://github.com/ajford/vimkivy)
 sha256sums=('SKIP')
+install=kivy.install
 
 pkgver() {
   cd $_gitname

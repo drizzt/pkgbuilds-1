@@ -1,9 +1,17 @@
+_gitname=vim-wordy
+
 post_install() {
   printf "$wordy\n"
 }
 
 post_upgrade() {
   post_install
+}
+
+post_remove() {
+  echo -n "Removing $_gitname directory... "
+  rm -rf "$HOME/.vim/plugged/$_gitname"
+  echo "done"
 }
 
 read -d '' wordy <<'EOF'
@@ -228,8 +236,3 @@ wordy is a work in progress. If you’ve spotted a problem or have an idea
 on improving this plugin, please post it to the github project issue page.
 Contributions are welcome.
 EOF
-
-op=$1
-shift
-
-$op $*

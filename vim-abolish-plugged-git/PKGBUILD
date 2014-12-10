@@ -13,6 +13,7 @@ url="https://github.com/tpope/vim-abolish"
 license=('custom:vim')
 source=(git+https://github.com/tpope/vim-abolish)
 sha256sums=('SKIP')
+install=abolish.install
 
 pkgver() {
   cd $_gitname

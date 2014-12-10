@@ -13,6 +13,7 @@ url="https://github.com/amdt/vim-niji"
 license=('custom:vim')
 source=(git+https://github.com/amdt/vim-niji)
 sha256sums=('SKIP')
+install=niji.install
 
 pkgver() {
   cd $_gitname

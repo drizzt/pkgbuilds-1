@@ -13,6 +13,7 @@ url="https://github.com/pbrisbin/vim-syntax-shakespeare"
 license=('MIT')
 source=(git+https://github.com/pbrisbin/vim-syntax-shakespeare)
 sha256sums=('SKIP')
+install=syntax-shakespeare.install
 
 pkgver() {
   cd $_gitname

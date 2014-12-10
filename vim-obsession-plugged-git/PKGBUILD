@@ -13,6 +13,7 @@ url="https://github.com/tpope/vim-obsession"
 license=('custom:vim')
 source=(git+https://github.com/tpope/vim-obsession)
 sha256sums=('SKIP')
+install=obsession.install
 
 pkgver() {
   cd $_gitname

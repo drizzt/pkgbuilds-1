@@ -13,6 +13,7 @@ url="https://github.com/AndrewRadev/inline_edit.vim"
 license=('custom:vim')
 source=(git+https://github.com/AndrewRadev/inline_edit.vim)
 sha256sums=('SKIP')
+install=inline_edit.install
 
 pkgver() {
   cd $_gitname

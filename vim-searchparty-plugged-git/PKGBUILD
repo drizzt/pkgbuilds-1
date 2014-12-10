@@ -13,6 +13,7 @@ url="http://of-vim-and-vigor.blogspot.com/2014/03/welcome-to-search-party.html"
 license=('custom:vim')
 source=(git+https://github.com/dahu/SearchParty)
 sha256sums=('SKIP')
+install=searchparty.install
 
 pkgver() {
   cd $_gitname

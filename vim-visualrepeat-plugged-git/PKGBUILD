@@ -15,6 +15,7 @@ url="https://github.com/vim-scripts/visualrepeat"
 license=('MIT')
 source=(git+https://github.com/vim-scripts/visualrepeat)
 sha256sums=('SKIP')
+install=visualrepeat.install
 
 pkgver() {
   cd $_gitname

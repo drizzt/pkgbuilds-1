@@ -13,6 +13,7 @@ url="https://github.com/OrangeT/vim-csharp"
 license=('custom:vim')
 source=(git+https://github.com/OrangeT/vim-csharp)
 sha256sums=('SKIP')
+install=csharp.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/junegunn/vim-easy-align"
 license=('MIT')
 source=(git+https://github.com/junegunn/vim-easy-align)
 sha256sums=('SKIP')
+install=easy-align.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/tshirtman/vim-cython"
 license=('custom:vim')
 source=(git+https://github.com/tshirtman/vim-cython)
 sha256sums=('SKIP')
+install=cython.install
 
 pkgver() {
   cd $_gitname

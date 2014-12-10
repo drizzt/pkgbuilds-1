@@ -13,6 +13,7 @@ url="https://github.com/tpope/vim-commentary"
 license=('custom:vim')
 source=(git+https://github.com/tpope/vim-commentary)
 sha256sums=('SKIP')
+install=commentary.install
 
 pkgver() {
   cd $_gitname

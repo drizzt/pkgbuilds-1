@@ -14,6 +14,7 @@ url="https://github.com/typedclojure/vim-typedclojure"
 license=('custom:vim')
 source=(git+https://github.com/typedclojure/vim-typedclojure)
 sha256sums=('SKIP')
+install=typedclojure.install
 
 pkgver() {
   cd $_gitname

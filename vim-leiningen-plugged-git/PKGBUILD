@@ -15,6 +15,7 @@ url="https://github.com/tpope/vim-leiningen"
 license=('MIT')
 source=(git+https://github.com/tpope/vim-leiningen)
 sha256sums=('SKIP')
+install=leiningen.install
 
 pkgver() {
   cd $_gitname

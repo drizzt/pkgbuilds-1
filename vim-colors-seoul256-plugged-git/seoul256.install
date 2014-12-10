@@ -1,9 +1,17 @@
+_gitname=seoul256.vim
+
 post_install() {
   printf "$seoul256\n"
 }
 
 post_upgrade() {
   post_install
+}
+
+post_remove() {
+  echo -n "Removing $_gitname directory... "
+  rm -rf "$HOME/.vim/plugged/$_gitname"
+  echo "done"
 }
 
 read -d '' seoul256 <<'EOF'

@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/AutumnLeaf"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/$_gitname)
 sha256sums=('SKIP')
+install=autumnleaf.install
 
 pkgver() {
   cd $_gitname

@@ -14,6 +14,7 @@ url="https://github.com/atsepkov/vim-tabularity"
 license=('BSD')
 source=(git+https://github.com/atsepkov/vim-tabularity)
 sha256sums=('SKIP')
+install=tabularity.install
 
 pkgver() {
   cd $_gitname

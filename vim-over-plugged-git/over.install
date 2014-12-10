@@ -1,0 +1,6 @@
+_gitname=vim-over
+post_remove() {
+  echo -n "Removing $_gitname directory... "
+  rm -rf "$HOME/.vim/plugged/$_gitname"
+  echo "done"
+}

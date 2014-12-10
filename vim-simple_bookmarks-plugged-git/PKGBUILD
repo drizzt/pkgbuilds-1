@@ -13,6 +13,7 @@ url="https://github.com/AndrewRadev/simple_bookmarks.vim"
 license=('custom:vim')
 source=(git+https://github.com/AndrewRadev/simple_bookmarks.vim)
 sha256sums=('SKIP')
+install=simple_bookmarks.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/xolox/vim-misc"
 license=('MIT')
 source=(git+https://github.com/xolox/vim-misc)
 sha256sums=('SKIP')
+install=misc-xolox.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/tpope/vim-scriptease"
 license=('custom:vim')
 source=(git+https://github.com/tpope/vim-scriptease)
 sha256sums=('SKIP')
+install=scriptease.install
 
 pkgver() {
   cd $_gitname

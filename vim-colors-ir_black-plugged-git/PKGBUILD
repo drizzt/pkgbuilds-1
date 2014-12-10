@@ -13,6 +13,7 @@ url="https://github.com/twerth/ir_black"
 license=('custom:vim')
 source=(git+https://github.com/twerth/ir_black)
 sha256sums=('SKIP')
+install=ir_black.install
 
 pkgver() {
   cd $_gitname

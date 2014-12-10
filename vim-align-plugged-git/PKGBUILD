@@ -13,6 +13,7 @@ url="https://github.com/JLimperg/Align"
 license=('custom:vim')
 source=(git+https://github.com/JLimperg/Align)
 sha256sums=('SKIP')
+install=align.install
 
 pkgver() {
   cd $_gitname

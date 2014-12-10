@@ -13,6 +13,7 @@ url="https://github.com/neapel/vim-java-bytecode"
 license=('BSD')
 source=(git+https://github.com/neapel/vim-java-bytecode)
 sha256sums=('SKIP')
+install=java-bytecode.install
 
 pkgver() {
   cd $_gitname

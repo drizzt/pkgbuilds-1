@@ -20,6 +20,7 @@ url="https://github.com/fatih/vim-go"
 license=('custom:vim')
 source=(git+https://github.com/fatih/vim-go)
 sha256sums=('SKIP')
+install=go.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/daisuzu/autorepeat.vim"
 license=('MIT')
 source=(git+https://github.com/daisuzu/autorepeat.vim)
 sha256sums=('SKIP')
+install=autorepeat.install
 
 pkgver() {
   cd $_gitname

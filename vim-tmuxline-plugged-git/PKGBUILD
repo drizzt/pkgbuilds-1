@@ -15,6 +15,7 @@ url="https://github.com/edkolev/tmuxline.vim"
 license=('MIT')
 source=(git+https://github.com/edkolev/tmuxline.vim)
 sha256sums=('SKIP')
+install=tmuxline.install
 
 pkgver() {
   cd $_gitname

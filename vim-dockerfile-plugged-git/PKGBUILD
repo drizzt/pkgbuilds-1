@@ -13,6 +13,7 @@ url="https://github.com/honza/dockerfile.vim"
 license=('BSD')
 source=(git+https://github.com/honza/dockerfile.vim)
 sha256sums=('SKIP')
+install=dockerfile.install
 
 pkgver() {
   cd $_gitname

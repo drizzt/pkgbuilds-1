@@ -13,6 +13,7 @@ url="https://github.com/todesking/ruby_hl_lvar.vim"
 license=('MIT')
 source=(git+https://github.com/todesking/ruby_hl_lvar.vim)
 sha256sums=('SKIP')
+install=ruby_hl_lvar.install
 
 pkgver() {
   cd $_gitname

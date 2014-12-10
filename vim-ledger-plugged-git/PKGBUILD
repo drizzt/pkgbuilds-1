@@ -13,6 +13,7 @@ url="https://github.com/ledger/vim-ledger"
 license=('custom:vim')
 source=(git+https://github.com/ledger/vim-ledger)
 sha256sums=('SKIP')
+install=ledger.install
 
 pkgver() {
   cd $_gitname

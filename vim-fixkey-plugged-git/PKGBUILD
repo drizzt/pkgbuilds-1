@@ -13,6 +13,7 @@ url="https://github.com/drmikehenry/vim-fixkey"
 license=('custom:vim')
 source=(git+https://github.com/drmikehenry/vim-fixkey)
 sha256sums=('SKIP')
+install=fixkey.install
 
 pkgver() {
   cd $_gitname

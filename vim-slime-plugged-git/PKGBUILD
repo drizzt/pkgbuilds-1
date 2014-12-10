@@ -13,6 +13,7 @@ url="https://github.com/jpalardy/vim-slime"
 license=('MIT')
 source=(git+https://github.com/jpalardy/vim-slime)
 sha256sums=('SKIP')
+install=slime.install
 
 pkgver() {
   cd $_gitname

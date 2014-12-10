@@ -13,6 +13,7 @@ url="https://github.com/AndrewRadev/sideways.vim"
 license=('custom:vim')
 source=(git+https://github.com/AndrewRadev/sideways.vim)
 sha256sums=('SKIP')
+install=sideways.install
 
 pkgver() {
   cd $_gitname

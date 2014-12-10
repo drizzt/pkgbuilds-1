@@ -15,6 +15,7 @@ url="https://github.com/yko/mojo.vim"
 license=('PerlArtistic')
 source=(git+https://github.com/yko/$_gitname)
 sha256sums=('SKIP')
+install=mojo.install
 
 pkgver() {
   cd $_gitname

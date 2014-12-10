@@ -13,6 +13,7 @@ url="https://github.com/wting/lhaskell.vim"
 license=('custom:vim')
 source=(git+https://github.com/wting/lhaskell.vim)
 sha256sums=('SKIP')
+install=lhaskell.install
 
 pkgver() {
   cd $_gitname

@@ -25,6 +25,7 @@ source=(git+https://github.com/Valloric/YouCompleteMe
         git+https://github.com/icsharpcode/NRefactory
         git+https://github.com/jbevain/cecil)
 sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP')
+install=youcompleteme.install
 
 pkgver() {
   cd "$srcdir/YouCompleteMe"

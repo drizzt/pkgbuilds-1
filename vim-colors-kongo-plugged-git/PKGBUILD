@@ -13,6 +13,7 @@ url="https://github.com/atweiden/vim-colors-kongo"
 license=('custom:vim')
 source=(git+https://github.com/atweiden/vim-colors-kongo)
 sha256sums=('SKIP')
+install=kongo.install
 
 pkgver() {
   cd $_gitname

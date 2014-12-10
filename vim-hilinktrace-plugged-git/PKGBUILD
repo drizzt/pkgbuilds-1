@@ -13,6 +13,7 @@ url="https://github.com/gerw/vim-HiLinkTrace"
 license=('custom:vim')
 source=(git+https://github.com/gerw/vim-HiLinkTrace)
 sha256sums=('SKIP')
+install=hilinktrace.install
 
 pkgver() {
   cd $_gitname

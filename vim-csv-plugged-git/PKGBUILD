@@ -13,6 +13,7 @@ url="https://github.com/chrisbra/csv.vim"
 license=('custom:vim')
 source=(git+https://github.com/chrisbra/csv.vim)
 sha256sums=('SKIP')
+install=csv.install
 
 pkgver() {
   cd $_gitname

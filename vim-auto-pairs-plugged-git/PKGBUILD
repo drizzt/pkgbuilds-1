@@ -13,6 +13,7 @@ url="https://github.com/jiangmiao/auto-pairs"
 license=('MIT')
 source=(git+https://github.com/jiangmiao/auto-pairs)
 sha256sums=('SKIP')
+install=auto-pairs.install
 
 pkgver() {
   cd $_gitname

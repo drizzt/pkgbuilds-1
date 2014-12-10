@@ -13,6 +13,7 @@ url="https://github.com/henrik/vim-indexed-search"
 license=('custom:vim')
 source=(git+https://github.com/henrik/vim-indexed-search)
 sha256sums=('SKIP')
+install=indexed-search.install
 
 pkgver() {
   cd $_gitname

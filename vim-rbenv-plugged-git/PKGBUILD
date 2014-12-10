@@ -13,6 +13,7 @@ url="https://github.com/tpope/vim-rbenv"
 license=('custom:vim')
 source=(git+https://github.com/tpope/vim-rbenv)
 sha256sums=('SKIP')
+install=rbenv.install
 
 pkgver() {
   cd $_gitname

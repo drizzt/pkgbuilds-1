@@ -13,6 +13,7 @@ url="https://github.com/danpal/VibrantInk-for-Vim"
 license=('custom:vim')
 source=(git+https://github.com/danpal/VibrantInk-for-Vim)
 sha256sums=('SKIP')
+install=vibrantink.install
 
 pkgver() {
   cd $_gitname

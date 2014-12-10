@@ -13,6 +13,7 @@ url="https://github.com/sjbach/lusty"
 license=('MIT')
 source=(git+https://github.com/sjbach/lusty)
 sha256sums=('SKIP')
+install=lusty.install
 
 pkgver() {
   cd $_gitname

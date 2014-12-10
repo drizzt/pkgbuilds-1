@@ -14,6 +14,7 @@ url="https://github.com/junkblocker/patchreview-vim"
 license=('custom:vim')
 source=(git+https://github.com/junkblocker/patchreview-vim)
 sha256sums=('SKIP')
+install=patchreview.install
 
 pkgver() {
   cd $_gitname

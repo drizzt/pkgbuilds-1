@@ -15,6 +15,7 @@ url="https://github.com/xolox/vim-lua-inspect"
 license=('MIT')
 source=(git+https://github.com/xolox/vim-lua-inspect)
 sha256sums=('SKIP')
+install=lua-inspect.install
 
 pkgver() {
   cd $_gitname

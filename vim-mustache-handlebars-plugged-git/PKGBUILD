@@ -13,6 +13,7 @@ url="https://github.com/mustache/vim-mustache-handlebars"
 license=('custom:vim')
 source=(git+https://github.com/mustache/vim-mustache-handlebars)
 sha256sums=('SKIP')
+install=mustache-handlebars.install
 
 pkgver() {
   cd $_gitname

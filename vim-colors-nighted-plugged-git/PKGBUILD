@@ -13,6 +13,7 @@ url="https://github.com/wolf-dog/nighted.vim"
 license=('MIT')
 source=(git+https://github.com/wolf-dog/nighted.vim)
 sha256sums=('SKIP')
+install=nighted.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/jnurmine/Zenburn"
 license=('GPL')
 source=(git+https://github.com/jnurmine/Zenburn)
 sha256sums=('SKIP')
+install=zenburn.install
 
 pkgver() {
   cd $_gitname

@@ -14,6 +14,7 @@ url="https://github.com/fishcakez/vim-dialyzer"
 license=('Apache')
 source=(git+https://github.com/fishcakez/vim-dialyzer)
 sha256sums=('SKIP')
+install=dialyzer.install
 
 pkgver() {
   cd $_gitname

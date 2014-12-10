@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/ifdef-highlighting"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/ifdef-highlighting)
 sha256sums=('SKIP')
+install=ifdef.install
 
 pkgver() {
   cd $_gitname

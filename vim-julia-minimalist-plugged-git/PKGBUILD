@@ -13,6 +13,7 @@ url="https://github.com/dcjones/julia-minimalist-vim"
 license=('custom:vim')
 source=(git+https://github.com/dcjones/julia-minimalist-vim)
 sha256sums=('SKIP')
+install=julia-minimalist.install
 
 pkgver() {
   cd $_gitname

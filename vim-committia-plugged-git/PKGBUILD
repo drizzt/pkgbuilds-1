@@ -13,6 +13,7 @@ url="https://github.com/rhysd/committia.vim"
 license=('MIT')
 source=(git+https://github.com/rhysd/committia.vim)
 sha256sums=('SKIP')
+install=committia.install
 
 pkgver() {
   cd $_gitname

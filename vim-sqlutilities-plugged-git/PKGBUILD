@@ -15,6 +15,7 @@ url="https://github.com/vim-scripts/SQLUtilities"
 license=('GPL')
 source=(git+https://github.com/vim-scripts/SQLUtilities)
 sha256sums=('SKIP')
+install=sqlutilities.install
 
 pkgver() {
   cd $_gitname

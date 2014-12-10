@@ -13,6 +13,7 @@ url="https://github.com/travitch/hasksyn"
 license=('BSD')
 source=(git+https://github.com/travitch/hasksyn)
 sha256sums=('SKIP')
+install=hasksyn.install
 
 pkgver() {
   cd $_gitname

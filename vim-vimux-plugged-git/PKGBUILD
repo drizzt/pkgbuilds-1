@@ -13,6 +13,7 @@ url="https://github.com/benmills/vimux"
 license=('MIT')
 source=(git+https://github.com/benmills/vimux)
 sha256sums=('SKIP')
+install=vimux.install
 
 pkgver() {
   cd $_gitname

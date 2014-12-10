@@ -13,6 +13,7 @@ url="https://github.com/ervandew/matchem"
 license=('BSD')
 source=(git+https://github.com/ervandew/matchem)
 sha256sums=('SKIP')
+install=matchem.install
 
 pkgver() {
   cd $_gitname

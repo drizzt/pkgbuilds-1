@@ -13,6 +13,7 @@ url="https://github.com/JalaiAmitahl/maven-compiler.vim"
 license=('custom:vim')
 source=(git+https://github.com/JalaiAmitahl/maven-compiler.vim)
 sha256sums=('SKIP')
+install=maven-compiler.install
 
 pkgver() {
   cd $_gitname

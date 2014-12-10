@@ -13,6 +13,7 @@ url="https://github.com/def-lkb/vimbufsync"
 license=('WTFPL')
 source=(git+https://github.com/def-lkb/vimbufsync)
 sha256sums=('SKIP')
+install=bufsync.install
 
 pkgver() {
   cd $_gitname

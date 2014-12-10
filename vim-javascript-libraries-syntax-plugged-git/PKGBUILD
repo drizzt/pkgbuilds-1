@@ -14,6 +14,7 @@ url="https://github.com/othree/javascript-libraries-syntax.vim"
 license=('MIT')
 source=(git+https://github.com/othree/javascript-libraries-syntax.vim)
 sha256sums=('SKIP')
+install=javascript-libraries-syntax.install
 
 pkgver() {
   cd $_gitname

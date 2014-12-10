@@ -13,6 +13,7 @@ url="https://github.com/SirVer/ultisnips"
 license=('GPL3')
 source=(git+https://github.com/SirVer/ultisnips)
 sha256sums=('SKIP')
+install=ultisnips.install
 
 pkgver() {
   cd $_gitname

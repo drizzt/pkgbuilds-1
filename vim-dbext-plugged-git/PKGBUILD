@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/dbext.vim"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/dbext.vim)
 sha256sums=('SKIP')
+install=dbext.install
 
 pkgver() {
   cd $_gitname

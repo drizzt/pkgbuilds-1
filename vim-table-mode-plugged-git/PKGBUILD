@@ -13,6 +13,7 @@ url="https://github.com/dhruvasagar/vim-table-mode"
 license=('custom:vim')
 source=(git+https://github.com/dhruvasagar/vim-table-mode)
 sha256sums=('SKIP')
+install=table-mode.install
 
 pkgver() {
   cd $_gitname

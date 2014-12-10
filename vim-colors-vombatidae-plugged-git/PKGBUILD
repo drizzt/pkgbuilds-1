@@ -13,6 +13,7 @@ url="https://github.com/octol/vombatidae-vim"
 license=('custom:vim')
 source=(git+https://github.com/octol/vombatidae-vim)
 sha256sums=('SKIP')
+install=vombatidae.install
 
 pkgver() {
   cd $_gitname

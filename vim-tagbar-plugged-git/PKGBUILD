@@ -13,6 +13,7 @@ url="https://github.com/majutsushi/tagbar"
 license=('custom:vim')
 source=(git+https://github.com/majutsushi/tagbar)
 sha256sums=('SKIP')
+install=tagbar.install
 
 pkgver() {
   cd $_gitname

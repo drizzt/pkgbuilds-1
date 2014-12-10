@@ -13,6 +13,7 @@ url="https://github.com/w0ng/vim-hybrid"
 license=('MIT')
 source=(git+https://github.com/w0ng/vim-hybrid)
 sha256sums=('SKIP')
+install=hybrid.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/leafo/moonscript-vim"
 license=('MIT')
 source=(git+https://github.com/leafo/moonscript-vim)
 sha256sums=('SKIP')
+install=moonscript.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/JavaDecompiler.vim"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/JavaDecompiler.vim)
 sha256sums=('SKIP')
+install=jad.install
 
 pkgver() {
   cd $_gitname

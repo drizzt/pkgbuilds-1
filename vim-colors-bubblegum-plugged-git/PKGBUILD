@@ -13,6 +13,7 @@ url="https://github.com/baskerville/bubblegum"
 license=('custom:vim')
 source=(git+https://github.com/baskerville/bubblegum)
 sha256sums=('SKIP')
+install=bubblegum.install
 
 pkgver() {
   cd $_gitname

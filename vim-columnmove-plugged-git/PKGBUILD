@@ -13,6 +13,7 @@ url="https://github.com/machakann/vim-columnmove"
 license=('NYSL')
 source=(git+https://github.com/machakann/vim-columnmove)
 sha256sums=('SKIP')
+install=columnmove.install
 
 pkgver() {
   cd $_gitname

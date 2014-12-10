@@ -13,6 +13,7 @@ url="https://github.com/hhvm/vim-hack"
 license=('BSD')
 source=(git+https://github.com/hhvm/vim-hack)
 sha256sums=('SKIP')
+install=hack.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/mitsuhiko/vim-rst"
 license=('BSD')
 source=(git+https://github.com/mitsuhiko/vim-rst)
 sha256sums=('SKIP')
+install=rst.install
 
 pkgver() {
   cd $_gitname

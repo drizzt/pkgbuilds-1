@@ -15,6 +15,7 @@ url="https://github.com/wlangstroth/vim-racket"
 license=('custom:vim')
 source=(git+https://github.com/wlangstroth/vim-racket)
 sha256sums=('SKIP')
+install=racket.install
 
 pkgver() {
   cd $_gitname

@@ -15,6 +15,7 @@ url="https://github.com/tek/vim-fieldtrip"
 license=('MIT')
 source=(git+https://github.com/tek/vim-fieldtrip)
 sha256sums=('SKIP')
+install=fieldtrip.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/dahu/VimLocalMacros"
 license=('MIT')
 source=(git+https://github.com/dahu/VimLocalMacros)
 sha256sums=('SKIP')
+install=localmacros.install
 
 pkgver() {
   cd $_gitname

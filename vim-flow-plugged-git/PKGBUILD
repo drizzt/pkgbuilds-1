@@ -13,6 +13,7 @@ url="https://github.com/facebook/vim-flow"
 license=('BSD')
 source=(git+https://github.com/facebook/vim-flow)
 sha256sums=('SKIP')
+install=flow.install
 
 pkgver() {
   cd $_gitname

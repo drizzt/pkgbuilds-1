@@ -14,6 +14,7 @@ url="https://github.com/Shougo/vimfiler.vim"
 license=('MIT')
 source=(git+https://github.com/Shougo/vimfiler.vim)
 sha256sums=('SKIP')
+install=vimfiler.install
 
 pkgver() {
   cd $_gitname

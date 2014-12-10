@@ -13,6 +13,7 @@ url="https://github.com/junegunn/fzf"
 license=('MIT')
 source=(git+https://github.com/junegunn/$_gitname)
 sha256sums=('SKIP')
+install=fzf.install
 
 pkgver() {
   cd $_gitname

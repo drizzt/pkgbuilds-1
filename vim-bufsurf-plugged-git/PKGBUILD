@@ -13,6 +13,7 @@ url="https://github.com/ton/vim-bufsurf"
 license=('MIT')
 source=(git+https://github.com/ton/vim-bufsurf)
 sha256sums=('SKIP')
+install=bufsurf.install
 
 pkgver() {
   cd $_gitname

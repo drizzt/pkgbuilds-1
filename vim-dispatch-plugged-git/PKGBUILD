@@ -13,6 +13,7 @@ url="https://github.com/tpope/vim-dispatch"
 license=('MIT')
 source=(git+https://github.com/tpope/vim-dispatch)
 sha256sums=('SKIP')
+install=dispatch.install
 
 pkgver() {
   cd $_gitname

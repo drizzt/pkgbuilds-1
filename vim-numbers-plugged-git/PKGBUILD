@@ -13,6 +13,7 @@ url="https://github.com/myusuf3/numbers.vim"
 license=('MIT')
 source=(git+https://github.com/myusuf3/numbers.vim)
 sha256sums=('SKIP')
+install=numbers.install
 
 pkgver() {
   cd $_gitname

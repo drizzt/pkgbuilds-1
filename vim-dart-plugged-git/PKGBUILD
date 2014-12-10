@@ -13,6 +13,7 @@ url="https://github.com/dart-lang/dart-vim-plugin"
 license=('BSD')
 source=(git+https://github.com/dart-lang/dart-vim-plugin)
 sha256sums=('SKIP')
+install=dart.install
 
 pkgver() {
   cd $_gitname

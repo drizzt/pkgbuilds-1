@@ -13,6 +13,7 @@ url="https://github.com/itchyny/lightline.vim"
 license=('MIT')
 source=(git+https://github.com/itchyny/lightline.vim)
 sha256sums=('SKIP')
+install=lightline.install
 
 pkgver() {
   cd $_gitname

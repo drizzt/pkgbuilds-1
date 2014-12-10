@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/xoria256.vim"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/xoria256.vim)
 sha256sums=('SKIP')
+install=xoria256.install
 
 pkgver() {
   cd $_gitname

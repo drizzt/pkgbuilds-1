@@ -13,6 +13,7 @@ url="https://github.com/edkolev/erlang-motions.vim"
 license=('MIT')
 source=(git+https://github.com/edkolev/erlang-motions.vim)
 sha256sums=('SKIP')
+install=erlang-motions.install
 
 pkgver() {
   cd $_gitname

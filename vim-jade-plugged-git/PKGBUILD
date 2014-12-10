@@ -13,6 +13,7 @@ url="https://github.com/digitaltoad/vim-jade"
 license=('MIT')
 source=(git+https://github.com/digitaltoad/vim-jade)
 sha256sums=('SKIP')
+install=jade.install
 
 pkgver() {
   cd $_gitname

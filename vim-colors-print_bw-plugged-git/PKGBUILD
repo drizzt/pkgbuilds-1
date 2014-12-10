@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/print_bw.zip"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/$_gitname)
 sha256sums=('SKIP')
+install=print_bw.install
 
 pkgver() {
   cd $_gitname

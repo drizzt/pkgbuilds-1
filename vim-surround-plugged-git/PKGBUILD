@@ -13,6 +13,7 @@ url="https://github.com/tpope/vim-surround"
 license=('custom:vim')
 source=(git+https://github.com/tpope/vim-surround)
 sha256sums=('SKIP')
+install=surround.install
 
 pkgver() {
   cd $_gitname

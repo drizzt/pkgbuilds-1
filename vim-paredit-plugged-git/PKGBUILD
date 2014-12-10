@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/paredit.vim"
 license=('custom:vim')
 source=(git+https://github.com/vim-scripts/$_gitname)
 sha256sums=('SKIP')
+install=paredit.install
 
 pkgver() {
   cd $_gitname

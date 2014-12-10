@@ -13,6 +13,7 @@ url="https://github.com/vim-perl/vim-perl"
 license=('custom:vim')
 source=(git+https://github.com/vim-perl/vim-perl)
 sha256sums=('SKIP')
+install=perl.install
 
 pkgver() {
   cd $_gitname

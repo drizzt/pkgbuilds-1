@@ -13,6 +13,7 @@ url="https://github.com/darvelo/vim-systemd"
 license=('custom:vim')
 source=(git+https://github.com/darvelo/vim-systemd)
 sha256sums=('SKIP')
+install=systemd.install
 
 pkgver() {
   cd $_gitname

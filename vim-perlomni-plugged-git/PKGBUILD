@@ -13,6 +13,7 @@ url="https://github.com/c9s/perlomni.vim"
 license=('custom:vim')
 source=(git+https://github.com/c9s/perlomni.vim)
 sha256sums=('SKIP')
+install=perlomni.install
 
 pkgver() {
   cd $_gitname

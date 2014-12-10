@@ -13,6 +13,7 @@ url="https://github.com/mattsacks/vim-eddie"
 license=('custom:vim')
 source=(git+https://github.com/mattsacks/vim-eddie)
 sha256sums=('SKIP')
+install=eddie.install
 
 pkgver() {
   cd $_gitname

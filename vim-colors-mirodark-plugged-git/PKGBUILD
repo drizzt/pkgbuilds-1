@@ -13,6 +13,7 @@ url="https://github.com/djjcast/mirodark"
 license=('MIT')
 source=(git+https://github.com/djjcast/mirodark)
 sha256sums=('SKIP')
+install=mirodark.install
 
 pkgver() {
   cd $_gitname

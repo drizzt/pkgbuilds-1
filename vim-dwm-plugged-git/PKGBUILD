@@ -13,6 +13,7 @@ url="https://github.com/spolu/dwm.vim"
 license=('MIT')
 source=(git+https://github.com/spolu/dwm.vim)
 sha256sums=('SKIP')
+install=dwm.install
 
 pkgver() {
   cd $_gitname

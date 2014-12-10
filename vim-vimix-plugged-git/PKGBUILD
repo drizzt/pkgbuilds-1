@@ -15,6 +15,7 @@ url="https://github.com/spiegela/vimix"
 license=('custom:vim')
 source=(git+https://github.com/spiegela/vimix)
 sha256sums=('SKIP')
+install=vimix.install
 
 pkgver() {
   cd $_gitname

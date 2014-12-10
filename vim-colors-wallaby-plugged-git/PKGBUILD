@@ -13,6 +13,7 @@ url="https://github.com/rhysd/wallaby.vim"
 license=('custom:vim')
 source=(git+https://github.com/rhysd/wallaby.vim)
 sha256sums=('SKIP')
+install=wallaby.install
 
 pkgver() {
   cd $_gitname

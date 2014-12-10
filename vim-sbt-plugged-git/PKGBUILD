@@ -13,6 +13,7 @@ url="https://github.com/derekwyatt/vim-sbt"
 license=('Apache')
 source=(git+https://github.com/derekwyatt/vim-sbt)
 sha256sums=('SKIP')
+install=sbt.install
 
 pkgver() {
   cd $_gitname

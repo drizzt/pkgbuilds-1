@@ -13,6 +13,7 @@ url="https://github.com/bruno-/vim-vertical-move"
 license=('MIT')
 source=(git+https://github.com/bruno-/vim-vertical-move)
 sha256sums=('SKIP')
+install=vertical-move.install
 
 pkgver() {
   cd $_gitname

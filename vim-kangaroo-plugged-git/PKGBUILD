@@ -13,6 +13,7 @@ url="https://github.com/tommcdo/vim-kangaroo"
 license=('custom:vim')
 source=(git+https://github.com/tommcdo/vim-kangaroo)
 sha256sums=('SKIP')
+install=kangaroo.install
 
 pkgver() {
   cd $_gitname

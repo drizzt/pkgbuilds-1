@@ -13,6 +13,7 @@ url="https://github.com/jamessan/vim-gnupg"
 license=('GPL2')
 source=(git+https://github.com/jamessan/vim-gnupg)
 sha256sums=('SKIP')
+install=gnupg.install
 
 pkgver() {
   cd $_gitname

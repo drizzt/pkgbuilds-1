@@ -13,6 +13,7 @@ url="https://github.com/tpope/vim-fugitive"
 license=('custom:vim')
 source=(git+https://github.com/tpope/vim-fugitive)
 sha256sums=('SKIP')
+install=fugitive.install
 
 pkgver() {
   cd $_gitname

@@ -13,6 +13,7 @@ url="https://github.com/vim-jp/vim-go-extra"
 license=('BSD')
 source=(git+https://github.com/vim-jp/vim-go-extra)
 sha256sums=('SKIP')
+install=go-extra.install
 
 pkgver() {
   cd $_gitname

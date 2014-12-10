@@ -13,6 +13,7 @@ url="https://github.com/mattn/sonictemplate-vim"
 license=('BSD')
 source=(git+https://github.com/mattn/sonictemplate-vim)
 sha256sums=('SKIP')
+install=sonictemplate.install
 
 pkgver() {
   cd $_gitname

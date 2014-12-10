@@ -13,6 +13,7 @@ url="https://github.com/vim-scripts/Sorcerer"
 license=('MIT')
 source=(git+https://github.com/vim-scripts/$_gitname)
 sha256sums=('SKIP')
+install=sorcerer.install
 
 pkgver() {
   cd $_gitname

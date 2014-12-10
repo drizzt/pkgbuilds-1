@@ -13,6 +13,7 @@ url="https://github.com/lervag/vim-latex"
 license=('MIT')
 source=(git+https://github.com/lervag/vim-latex)
 sha256sums=('SKIP')
+install=latex.install
 
 pkgver() {
   cd $_gitname
