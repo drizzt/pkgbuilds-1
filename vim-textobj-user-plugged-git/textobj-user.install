@@ -1,7 +1,15 @@
 _gitname=vim-textobj-user
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$textobj\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

@@ -1,7 +1,15 @@
 _gitname=vim-lexical
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$lexical\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

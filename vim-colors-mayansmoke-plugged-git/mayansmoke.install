@@ -1,7 +1,15 @@
 _gitname=mayansmoke
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$mayansmoke\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

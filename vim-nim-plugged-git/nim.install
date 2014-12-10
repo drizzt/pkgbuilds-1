@@ -1,7 +1,15 @@
 _gitname=nimrod.vim
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$nim\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

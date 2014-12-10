@@ -1,7 +1,15 @@
 _gitname=vim-objc
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$objc\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

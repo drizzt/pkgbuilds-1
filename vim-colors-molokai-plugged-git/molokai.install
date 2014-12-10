@@ -1,7 +1,15 @@
 _gitname=molokai
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$molokai\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

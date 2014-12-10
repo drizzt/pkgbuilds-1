@@ -1,7 +1,15 @@
 _gitname=vim-litecorrect
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$litecorrect\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

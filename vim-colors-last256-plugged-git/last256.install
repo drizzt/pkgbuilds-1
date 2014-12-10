@@ -1,7 +1,15 @@
 _gitname=last256
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$last256\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

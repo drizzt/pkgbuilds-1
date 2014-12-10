@@ -1,7 +1,15 @@
 _gitname=vim-haskellConcealPlus
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$concealplus\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

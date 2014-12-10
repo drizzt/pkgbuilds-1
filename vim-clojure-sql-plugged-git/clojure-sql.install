@@ -1,7 +1,15 @@
 _gitname=vim-clojure-sql
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$cljsql\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

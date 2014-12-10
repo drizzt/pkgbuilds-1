@@ -1,7 +1,15 @@
 _gitname=vim-easymotion
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$easymotion\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

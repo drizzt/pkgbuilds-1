@@ -1,7 +1,15 @@
 _gitname=crunch.vim
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$crunch\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

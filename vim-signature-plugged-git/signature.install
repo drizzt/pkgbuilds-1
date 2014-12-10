@@ -1,7 +1,15 @@
 _gitname=vim-signature
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$signature\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

@@ -1,7 +1,15 @@
 _gitname=vim-nefertiti
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$nefertiti\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

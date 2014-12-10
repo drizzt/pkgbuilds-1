@@ -1,7 +1,15 @@
 _gitname=gtk-vim-syntax
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$gtk\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

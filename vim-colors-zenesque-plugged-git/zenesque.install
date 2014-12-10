@@ -1,7 +1,15 @@
 _gitname=zenesque.vim
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$zenesque\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

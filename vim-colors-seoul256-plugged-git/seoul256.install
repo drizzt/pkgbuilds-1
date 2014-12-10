@@ -1,7 +1,15 @@
 _gitname=seoul256.vim
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$seoul256\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

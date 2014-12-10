@@ -1,7 +1,15 @@
 _gitname=phpcomplete-extended
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$phpcomplete\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

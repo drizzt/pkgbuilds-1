@@ -1,7 +1,15 @@
 _gitname=taboo.vim
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$taboo\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {

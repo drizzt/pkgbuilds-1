@@ -1,7 +1,15 @@
 _gitname=tabular
 
+pre_install() {
+  post_remove
+}
+
 post_install() {
   printf "$tabular\n"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {
