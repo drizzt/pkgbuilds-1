@@ -1,0 +1,31 @@
+_gitname=vim-indent-guides
+
+pre_install() {
+  post_remove
+}
+
+post_install() {
+  printf "$indentguides\n"
+}
+
+pre_upgrade() {
+  post_remove
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  echo -n "Removing $_gitname directory... "
+  rm -rf "$HOME/.vim/plugged/$_gitname"
+  echo "done"
+}
+
+read -d '' indentguides <<'EOF'
+    ____           __            __     ______       _      __
+   /  _/____  ____/ /___  ____  / /_   / ____/__  __(_)____/ /___  _____
+   / / / __ \/ __  // _ \/ __ \/ __/  / / __ / / / / // __  // _ \/ ___/
+ _/ / / / / / /_/ //  __/ / / / /_   / /_/ // /_/ / // /_/ //  __(__  )
+/___//_/ /_/\__,_/ \___/_/ /_/\__/   \____/ \__,_/_/ \__,_/ \___/____/
+EOF
