@@ -2,16 +2,16 @@
 
 pkgname=vim-colors-vibrantink-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=VibrantInk-for-Vim
-pkgver=20110708
+pkgver=20141007
 pkgrel=1
 pkgdesc="Vim version of the VibrantInk Textmate theme ($USER)"
 arch=('any')
 depends=('vim')
 makedepends=('git')
 groups=('vim-plugins')
-url="https://github.com/danpal/VibrantInk-for-Vim"
+url="https://github.com/atweiden/VibrantInk-for-Vim"
 license=('custom:vim')
-source=(git+https://github.com/danpal/VibrantInk-for-Vim)
+source=(git+https://github.com/atweiden/VibrantInk-for-Vim#branch=plugin-manager-compatibility)
 sha256sums=('SKIP')
 install=vibrantink.install
 
@@ -22,7 +22,7 @@ pkgver() {
 
 prepare() {
   cd $_gitname
-  git config remote.origin.url https://git::@${source##git+https://}.git
+  git config remote.origin.url https://git::@github.com/atweiden/VibrantInk-for-Vim.git
 }
 
 package() {
