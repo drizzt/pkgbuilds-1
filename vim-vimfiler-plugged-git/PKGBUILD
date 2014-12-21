@@ -8,6 +8,7 @@ pkgdesc="Powerful file explorer written in Vimscript ($USER)"
 arch=('any')
 depends=('vim'
          "vim-unite-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
+optdepends=('trash-cli: avoid permanently deleting files from vimfiler')
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/Shougo/vimfiler.vim"
