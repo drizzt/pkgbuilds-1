@@ -20,6 +20,11 @@ pkgver() {
   git log -1 --format="%cd" --date=short | sed "s|-||g"
 }
 
+prepare() {
+  cd $_gitname
+  git config remote.origin.url https://git::@${source##git+https://}.git
+}
+
 package() {
   cd $_gitname
   install -dm 755 "$pkgdir/$HOME/.vim/plugged/$_gitname"
