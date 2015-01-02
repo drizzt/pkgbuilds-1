@@ -2,7 +2,7 @@
 
 pkgname=vim-after-syntax-vim-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-after-syntax-vim
-pkgver=20110706
+pkgver=20141231
 pkgrel=1
 pkgdesc="Extended syntax highlighting rules for Vimscript ($USER)"
 arch=('any')
