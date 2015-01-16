@@ -3,7 +3,7 @@
 
 pkgname=vim-youcompleteme-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=YouCompleteMe
-pkgver=20150109
+pkgver=20150116
 pkgrel=1
 pkgdesc="A code-completion engine for Vim ($USER)"
 arch=('i686' 'x86_64')
