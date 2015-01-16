@@ -2,7 +2,7 @@
 
 pkgname=vim-merlin-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=merlin.vim
-pkgver=20141124
+pkgver=20141231
 pkgrel=1
 pkgdesc="Context sensitive completion for OCaml in Vim ($USER)"
 arch=('any')
