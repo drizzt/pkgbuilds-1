@@ -2,7 +2,7 @@
 
 pkgname=vim-javascript-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-javascript
-pkgver=20140317
+pkgver=20150112
 pkgrel=1
 pkgdesc="Vastly improves Vim's JavaScript indentation ($USER)"
 arch=('any')
