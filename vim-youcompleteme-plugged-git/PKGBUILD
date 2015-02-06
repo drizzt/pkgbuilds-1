@@ -3,7 +3,7 @@
 
 pkgname=vim-youcompleteme-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=YouCompleteMe
-pkgver=20150130
+pkgver=20150205
 pkgrel=1
 pkgdesc="A code-completion engine for Vim ($USER)"
 arch=('i686' 'x86_64')
@@ -23,8 +23,9 @@ source=(git+https://github.com/Valloric/YouCompleteMe
         git+https://github.com/Pylons/waitress
         git+https://github.com/nosami/OmniSharpServer
         git+https://github.com/icsharpcode/NRefactory
-        git+https://github.com/jbevain/cecil)
-sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP')
+        git+https://github.com/jbevain/cecil
+        git+https://github.com/amoffat/sh)
+sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP')
 install=youcompleteme.install
 
 pkgver() {
@@ -51,6 +52,8 @@ prepare() {
   git config submodule.third_party/jedi.url "$srcdir/jedi"
   git config submodule.third_party/waitress.url "$srcdir/waitress"
   git config submodule.third_party/OmniSharpServer.url "$srcdir/OmniSharpServer"
+  git config submodule.third_party/requests.url "$srcdir/requests"
+  git config submodule.third_party/sh.url "$srcdir/sh"
   git submodule update
 
   cd "$srcdir/YouCompleteMe/third_party/ycmd/third_party/OmniSharpServer"
