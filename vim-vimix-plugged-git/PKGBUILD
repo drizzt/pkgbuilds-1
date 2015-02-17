@@ -8,7 +8,7 @@ pkgdesc="Changes Vimux runner directory to Elixir project root and detects corre
 arch=('any')
 depends=('elixir'
          'vim'
-         "vimux-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
+         "vim-vimux-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/spiegela/vimix"

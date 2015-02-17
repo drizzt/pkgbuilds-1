@@ -7,7 +7,7 @@ pkgrel=1
 pkgdesc="Send Python code from Vim to ipython running within a tmux split ($USER)"
 arch=('any')
 depends=('vim'
-         "vimux-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
+         "vim-vimux-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/jgors/vimux-ipy"
