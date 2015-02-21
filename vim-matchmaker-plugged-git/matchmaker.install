@@ -1,0 +1,15 @@
+_gitname=vim-matchmaker
+
+pre_install() {
+  post_remove
+}
+
+pre_upgrade() {
+  post_remove
+}
+
+post_remove() {
+  echo -n "Removing $_gitname directory... "
+  rm -rf "$HOME/.vim/plugged/$_gitname"
+  echo "done"
+}
