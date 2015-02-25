@@ -2,11 +2,12 @@
 
 pkgname=vim-crunch-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=crunch.vim
-pkgver=20140822
+pkgver=20150224
 pkgrel=1
 pkgdesc="An easier way to perform calculations inside Vim ($USER)"
 arch=('any')
-depends=('vim')
+depends=('vim'
+         "vim-selection-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git")
 makedepends=('git')
 groups=('vim-plugins')
 url="https://github.com/arecarn/crunch.vim"
