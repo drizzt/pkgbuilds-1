@@ -1,0 +1,32 @@
+_gitname=vim-gotham
+
+pre_install() {
+  post_remove
+}
+
+post_install() {
+  printf "$gotham\n"
+}
+
+pre_upgrade() {
+  post_remove
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  echo -n "Removing $_gitname directory... "
+  rm -rf "$HOME/.vim/plugged/$_gitname"
+  echo "done"
+}
+
+read -d '' gotham <<'EOF'
+ _____ _____ _____ _   _   ___  ___  ___
+|  __ \  _  |_   _| | | | / _ \ |  \/  |
+| |  \/ | | | | | | |_| |/ /_\ \| .  . |
+| | __| | | | | | |  _  ||  _  || |\/| |
+| |_\ \ \_/ / | | | | | || | | || |  | |
+ \____/\___/  \_/ \_| |_/\_| |_/\_|  |_/
+EOF
