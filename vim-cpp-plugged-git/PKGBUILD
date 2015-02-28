@@ -1,17 +1,17 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
 pkgname=vim-cpp-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
-_gitname=cpp-vim
-pkgver=20140516
+_gitname=vim-cpp
+pkgver=20150301
 pkgrel=1
 pkgdesc="Bram Moolenaar's c.vim and Ken Shan's cpp.vim with C++11 support added ($USER)"
 arch=('any')
 depends=('vim')
 makedepends=('git')
 groups=('vim-plugins')
-url="https://github.com/vim-jp/cpp-vim"
+url="https://github.com/vim-jp/vim-cpp"
 license=('custom:vim')
-source=(git+https://github.com/vim-jp/cpp-vim)
+source=(git+https://github.com/vim-jp/vim-cpp)
 sha256sums=('SKIP')
 install=cpp.install
 

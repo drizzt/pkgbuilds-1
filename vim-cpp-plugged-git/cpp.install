@@ -1,4 +1,4 @@
-_gitname=cpp-vim
+_gitname=vim-cpp
 
 pre_install() {
   post_remove
