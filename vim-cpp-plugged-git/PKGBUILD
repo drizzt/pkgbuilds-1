@@ -2,7 +2,7 @@
 
 pkgname=vim-cpp-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-cpp
-pkgver=20150301
+pkgver=20150302
 pkgrel=1
 pkgdesc="Bram Moolenaar's c.vim and Ken Shan's cpp.vim with C++11 support added ($USER)"
 arch=('any')
