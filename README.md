@@ -297,6 +297,8 @@ Example
 vim-wordy-plugged-git/PKGBUILD
 
 ```bash
+# Maintainer: Andy Weidenbaum <archbaum@gmail.com>
+
 pkgname=vim-wordy-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
 _gitname=vim-wordy
 pkgver=20140922
@@ -325,9 +327,8 @@ prepare() {
 package() {
   cd $_gitname
   install -dm 755 "$pkgdir/$HOME/.vim/plugged/$_gitname"
-  for _file in `ls -A`; do
-    cp -dpr --no-preserve=ownership $_file "$pkgdir/$HOME/.vim/plugged/$_gitname"
-  done
+  find . -mindepth 1 -maxdepth 1 -exec \
+    cp -dpr --no-preserve=ownership '{}' "$pkgdir/$HOME/.vim/plugged/$_gitname" \;
   find "$pkgdir" -mindepth 1 -maxdepth 1 -exec chown -R $USER:users '{}' \;
 }
 ```
@@ -335,12 +336,28 @@ package() {
 wordy.install
 
 ```bash
+_gitname=vim-wordy
+
+pre_install() {
+  post_remove
+}
+
 post_install() {
-  printf "$wordy\n"
+  printf "%b\n" "$wordy"
+}
+
+pre_upgrade() {
+  post_remove
 }
 
 post_upgrade() {
   post_install
+}
+
+post_remove() {
+  echo -n "Removing $_gitname directory... "
+  rm -rf "$HOME/.vim/plugged/$_gitname"
+  echo "done"
 }
 
 read -d '' wordy <<'EOF'
