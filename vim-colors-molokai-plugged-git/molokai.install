@@ -5,7 +5,7 @@ pre_install() {
 }
 
 post_install() {
-  printf "$molokai\n"
+  printf "%b\n" "$molokai"
 }
 
 pre_upgrade() {

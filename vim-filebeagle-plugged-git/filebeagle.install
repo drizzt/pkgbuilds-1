@@ -5,7 +5,7 @@ pre_install() {
 }
 
 post_install() {
-  printf "$filebeagle\n"
+  printf "%b\n" "$filebeagle"
 }
 
 pre_upgrade() {

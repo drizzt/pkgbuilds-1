@@ -5,7 +5,7 @@ pre_install() {
 }
 
 post_install() {
-  printf "$liquidcarbon\n"
+  printf "%b\n" "$liquidcarbon"
 }
 
 pre_upgrade() {

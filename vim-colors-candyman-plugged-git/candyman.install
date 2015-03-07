@@ -5,7 +5,7 @@ pre_install() {
 }
 
 post_install() {
-  printf "$candyman\n"
+  printf "%b\n" "$candyman"
 }
 
 pre_upgrade() {

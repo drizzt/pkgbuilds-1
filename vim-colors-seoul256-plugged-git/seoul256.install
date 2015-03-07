@@ -5,7 +5,7 @@ pre_install() {
 }
 
 post_install() {
-  printf "$seoul256\n"
+  printf "%b\n" "$seoul256"
 }
 
 pre_upgrade() {

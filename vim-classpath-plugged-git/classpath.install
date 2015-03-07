@@ -5,7 +5,7 @@ pre_install() {
 }
 
 post_install() {
-  printf "$classpath\n"
+  printf "%b\n" "$classpath"
 }
 
 pre_upgrade() {

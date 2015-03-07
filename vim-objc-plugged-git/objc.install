@@ -5,7 +5,7 @@ pre_install() {
 }
 
 post_install() {
-  printf "$objc\n"
+  printf "%b\n" "$objc"
 }
 
 pre_upgrade() {

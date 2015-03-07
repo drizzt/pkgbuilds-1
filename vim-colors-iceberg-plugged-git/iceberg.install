@@ -5,7 +5,7 @@ pre_install() {
 }
 
 post_install() {
-  printf "$iceberg\n"
+  printf "%b\n" "$iceberg"
 }
 
 pre_upgrade() {
