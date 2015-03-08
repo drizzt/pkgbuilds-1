@@ -1,4 +1,4 @@
-_gitname=vim-latex
+_gitname=vimtex
 
 pre_install() {
   post_remove

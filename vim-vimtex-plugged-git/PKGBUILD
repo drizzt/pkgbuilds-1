@@ -1,19 +1,19 @@
 # Maintainer: Andy Weidenbaum <archbaum@gmail.com>
 
-pkgname=vim-latex-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
-_gitname=vim-latex
-pkgver=20141119
+pkgname=vim-vimtex-plugged-$(echo $USER | sha512sum | cut -c -128 | sha512sum | cut -c -8)-git
+_gitname=vimtex
+pkgver=20150308
 pkgrel=1
 pkgdesc="A simple and lightweight Vim plugin for editing LaTeX files ($USER)"
 arch=('any')
 depends=('texlive-core' 'vim')
 makedepends=('git')
 groups=('vim-plugins')
-url="https://github.com/lervag/vim-latex"
+url="https://github.com/lervag/vimtex"
 license=('MIT')
-source=(git+https://github.com/lervag/vim-latex)
+source=(git+https://github.com/lervag/vimtex)
 sha256sums=('SKIP')
-install=latex.install
+install=vimtex.install
 
 pkgver() {
   cd $_gitname
